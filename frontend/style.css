@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap');
+
+:root {
+  --ocean-deep:    #0a1628;
+  --ocean-mid:     #0d2444;
+  --ocean-light:   #1a4a6e;
+  --wave-blue:     #2196b6;
+  --foam:          #7ed8f6;
+  --hit-red:       #ff4136;
+  --hit-glow:      #ff6b35;
+  --miss-grey:     #4a6380;
+  --ship-green:    #39d353;
+  --gold:          #ffd700;
+  --text-light:    #e0f4ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ocean-deep);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(13, 36, 68, 0.8) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(26, 74, 110, 0.4) 0%, transparent 50%);
+  color: var(--text-light);
+  font-family: 'VT323', monospace;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Animated ocean waves in the background */
+body::before {
+  content: '';
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(33, 150, 182, 0.05) 40px,
+    rgba(33, 150, 182, 0.05) 80px
+  );
+  animation: waveShift 8s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes waveShift {
+  from { background-position-x: 0; }
+  to   { background-position-x: 80px; }
+}
+
+#app {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* ── Header ── */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(14px, 3vw, 24px);
+  color: var(--gold);
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.6),
+    0 0 30px rgba(255, 215, 0, 0.3);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+#status-msg {
+  font-size: 22px;
+  color: var(--foam);
+  min-height: 28px;
+  transition: all 0.3s ease;
+}
+
+/* ── Main layout ── */
+main {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.board-section h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: var(--foam);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── The Grid ── */
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  padding: 12px;
+  background: rgba(13, 36, 68, 0.8);
+  border: 2px solid var(--wave-blue);
+  border-radius: 8px;
+  box-shadow:
+    0 0 20px rgba(33, 150, 182, 0.3),
+    inset 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.cell {
+  width:  64px;
+  height: 64px;
+  background: rgba(26, 74, 110, 0.5);
+  border: 1px solid rgba(33, 150, 182, 0.25);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer on hover (enemy board only) */
+#enemy-board .cell:not(.hit):not(.miss):hover {
+  background: rgba(33, 150, 182, 0.4);
+  border-color: var(--foam);
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(126, 216, 246, 0.5);
+  cursor: crosshair;
+}
+
+/* Miss */
+.cell.miss {
+  background: rgba(74, 99, 128, 0.3);
+  cursor: default;
+}
+.cell.miss::after {
+  content: '●';
+  color: var(--miss-grey);
+  font-size: 20px;
+}
+
+/* Hit */
+.cell.hit {
+  background: rgba(255, 65, 54, 0.25);
+  border-color: var(--hit-red);
+  cursor: default;
+  animation: hitFlash 0.4s ease-out;
+}
+.cell.hit::after {
+  content: '💥';
+  font-size: 22px;
+}
+
+@keyframes hitFlash {
+  0%   { background: rgba(255, 65, 54, 0.8); transform: scale(1.15); }
+  100% { background: rgba(255, 65, 54, 0.25); transform: scale(1); }
+}
+
+/* Ship (player's own board) */
+.cell.ship {
+  background: rgba(57, 211, 83, 0.2);
+  border-color: var(--ship-green);
+  cursor: default;
+}
+.cell.ship::after {
+  content: '🐊';
+  font-size: 20px;
+}
+
+/* Sunk */
+.cell.sunk {
+  background: rgba(255, 65, 54, 0.4);
+  border-color: var(--hit-red);
+  animation: sunkPulse 1s ease-in-out infinite alternate;
+}
+.cell.sunk::after {
+  content: '☠️';
+  font-size: 20px;
+}
+
+@keyframes sunkPulse {
+  from { box-shadow: 0 0 5px var(--hit-red); }
+  to   { box-shadow: 0 0 18px var(--hit-red); }
+}
+
+/* ── Legend ── */
+#legend {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 28px;
+  font-size: 18px;
+}
+
+.legend-item { opacity: 0.8; }
+.legend-item.miss  { color: var(--miss-grey); }
+.legend-item.hit   { color: var(--hit-red);   }
+.legend-item.ship  { color: var(--ship-green); }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .cell { width: 30px; height: 30px; font-size: 14px; }
+  .cell.hit::after, .cell.ship::after, .cell.sunk::after { font-size: 14px; }
+}
