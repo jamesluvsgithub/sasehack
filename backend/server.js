@@ -12,14 +12,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '../frontend')));
 app.use(express.json());
 
-// ── Game state ────────────────────────────────
-const players    = {};  // { socketId: 'player1' | 'player2' }
-const shipData   = {};  // { 'player1': [[r,c],...], 'player2': [[r,c],...] }
-const readyState = {};  // { 'player1': true/false, 'player2': true/false }
+const players    = {};  
+const shipData   = {};  
+const readyState = {};  
 let   gameActive = false;
 let   turn       = 'player1';
 
-// ── Helpers ───────────────────────────────────
 function getId(role) {
   return Object.keys(players).find(id => players[id] === role);
 }
@@ -28,7 +26,6 @@ function bothReady() {
   return readyState['player1'] === true && readyState['player2'] === true;
 }
 
-// ── Connection ────────────────────────────────
 io.on('connection', (socket) => {
 
   const takenRoles = Object.values(players);
@@ -49,9 +46,6 @@ io.on('connection', (socket) => {
     return;
   }
 
-  // ── Ship placement ────────────────────────
-  // Frontend emits: socket.emit('placeShips', { ships: [[r,c],[r,c],...] })
-  // ships = every cell occupied by any ship
   socket.on('placeShips', ({ ships }) => {
     const role = players[socket.id];
     if (!role) return;
@@ -76,7 +70,6 @@ io.on('connection', (socket) => {
     }
   });
 
-  // ── Attack ────────────────────────────────
   socket.on('attack', ({ row, col }) => {
     const role = players[socket.id];
     if (!gameActive)   return;
@@ -89,7 +82,6 @@ io.on('connection', (socket) => {
     }
   });
 
-  // ── Attack result ─────────────────────────
   socket.on('attackResult', ({ row, col, result }) => {
     const defenderRole = players[socket.id];
     const attackerRole = defenderRole === 'player1' ? 'player2' : 'player1';
@@ -111,7 +103,6 @@ io.on('connection', (socket) => {
     }
   });
 
-  // ── Disconnect ────────────────────────────
   socket.on('disconnect', () => {
     const role = players[socket.id];
     console.log(`Disconnected: ${socket.id} (${role})`);
@@ -133,7 +124,6 @@ io.on('connection', (socket) => {
   });
 });
 
-// ── Hardware attack (Arduino POST) ───────────
 app.post('/hardware-attack', (req, res) => {
   const { row, col } = req.body;
   if (row === undefined || col === undefined) {
