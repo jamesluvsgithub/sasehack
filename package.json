@@ -1,0 +1,25 @@
+{
+  "name": "sasehack",
+  "version": "1.0.0",
+  "description": "read me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesluvsgithub/sasehack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jamesluvsgithub/sasehack/issues"
+  },
+  "homepage": "https://github.com/jamesluvsgithub/sasehack#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  }
+}
