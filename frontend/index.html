@@ -7,26 +7,51 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <header>
-      <h1>BATTLEGATOR</h1>
-      <p id="status-msg">click a cell to defloat a sasegator</p>
-    </header>
+<div id="app">
 
+  <header>
+    <h1>BATTLEGATOR</h1>
+    <p id="status-msg">Connecting...</p>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       PLACEMENT SECTION — shows first
+  ════════════════════════════════════════ -->
+  <div id="placement-section" style="display:none">
+
+    <p class="placement-instructions">Place your gators on the board!</p>
+
+    <!-- Ship picker buttons (filled in by JS) -->
+    <div id="ship-selector"></div>
+
+    <!-- Rotate + Reset buttons -->
+    <div class="placement-controls">
+      <button id="orient-btn" onclick="toggleOrientation()">↔ Horizontal</button>
+      <button onclick="resetPlacement()">Reset</button>
+    </div>
+
+    <!-- The grid you place ships on -->
+    <div id="placement-board" class="board"></div>
+
+    <!-- Unlocks once all 3 ships are placed -->
+    <button id="ready-btn" onclick="readyUp()" disabled>READY FOR BATTLE 🐊</button>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       BATTLE SECTION — shows after placement
+  ════════════════════════════════════════ -->
+  <div id="battle-section" style="display:none">
     <main>
-      <!-- Enemy board (player clicks here to attack) -->
       <section class="board-section">
         <h2>Enemy GatorWaters</h2>
         <div id="enemy-board" class="board"></div>
       </section>
-
-      <!-- Player board (shows your own ships) -->
       <section class="board-section">
         <h2>Your GatorWaters</h2>
         <div id="player-board" class="board"></div>
       </section>
     </main>
-
     <div id="legend">
       <span class="legend-item miss">● Miss</span>
       <span class="legend-item hit">● Hit</span>
@@ -34,7 +59,8 @@
     </div>
   </div>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="game.js"></script>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
