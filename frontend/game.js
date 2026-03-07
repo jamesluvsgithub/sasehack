@@ -1,18 +1,18 @@
+
 const GRID_ROWS = 2;
 const GRID_COLS = 7;
 
 const SHIPS = [
-  { name: 'triple gator',    size: 3 },
-  { name: 'double gator', size: 2 },
-  { name: 'single gator',   size: 1 },
+  { name: 'Big Gator',    size: 3 },
+  { name: 'Medium Gator', size: 2 },
+  { name: 'Baby Gator',   size: 1 },
 ];
 
 const state = {
-  
   enemyGrid:  createGrid(),
   playerGrid: createGrid(),
   gameOver:   false,
-  myTurn:     true,
+  myTurn:     false, 
 };
 
 placeShipsRandom(state.playerGrid, SHIPS);
@@ -30,14 +30,13 @@ try {
   socket.on('attackResult', ({ row, col, result }) => {
     applyAttackResult(state.enemyGrid, row, col, result);
     renderBoard('enemy-board', state.enemyGrid, false);
-    updateStatus(result === 'hit'  ? '💥 Hit!'   :
-                 result === 'sunk' ? '☠️ Sunk!'  : '🌊 Miss!');
-    state.myTurn = false;
+    updateStatus(result === 'hit'  ? '💥 Hit! Go again!'   :
+                 result === 'sunk' ? '☠️ Sunk! Go again!'  : '🌊 Miss! Opponent\'s turn.');
   });
 
   socket.on('yourTurn', () => {
     state.myTurn = true;
-    updateStatus('Your turn – pick a cell!');
+    updateStatus('click a cell to defloat a sasegator!');
   });
 
   socket.on('hardwareAttack', ({ row, col }) => {
@@ -89,7 +88,6 @@ function canPlace(grid, row, col, size, horizontal) {
   }
   return true;
 }
-
 function fireAt(row, col) {
   const cell = state.enemyGrid[row][col];
   if (cell === 'hit' || cell === 'miss' || cell === 'sunk') return;
@@ -133,12 +131,12 @@ function handleIncomingAttack(row, col) {
 
 function checkWin() {
   const allSunk = !state.enemyGrid.flat().includes('ship');
-  if (allSunk) { state.gameOver = true; updateStatus('CONGRATS BOOM BOOM BOOM YOU WON!!!'); }
+  if (allSunk) { state.gameOver = true; updateStatus('🎉 YOU WIN! All gators sunk!'); }
 }
 
 function checkLoss() {
   const allSunk = !state.playerGrid.flat().includes('ship');
-  if (allSunk) { state.gameOver = true; updateStatus('gg you lost'); }
+  if (allSunk) { state.gameOver = true; updateStatus('💀 Your fleet is sunk! Game over.'); }
 }
 
 function renderBoard(boardId, grid, isPlayer) {
