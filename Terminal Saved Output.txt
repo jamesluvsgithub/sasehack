@@ -1,0 +1,44 @@
+Last login: Sat Mar  7 18:31:04 on ttys000
+connie@Connies-MacBook-Air ~ % mkdir -p ~/.ssh
+connie@Connies-MacBook-Air ~ % nano ~/.ssh/id_ed25519
+connie@Connies-MacBook-Air ~ % chmod 600 ~/.ssh/id_ed25519
+connie@Connies-MacBook-Air ~ % 45.77.194.174
+zsh: command not found: 45.77.194.174
+connie@Connies-MacBook-Air ~ % ssh root@45.77.194.174
+The authenticity of host '45.77.194.174 (45.77.194.174)' can't be established.
+ED25519 key fingerprint is SHA256:gv1xuqG+GgydSbua1/zDnBcpO1+nRsWx2hNj96fA2f4.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '45.77.194.174' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-171-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Mar  7 11:35:22 PM UTC 2026
+
+  System load:  0.0                Processes:               137
+  Usage of /:   27.7% of 22.88GB   Users logged in:         0
+  Memory usage: 22%                IPv4 address for enp1s0: 45.77.194.174
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+root@Battleship-SASEhacks:~# 
