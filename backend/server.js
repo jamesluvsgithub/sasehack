@@ -1,3 +1,4 @@
+
 const express    = require('express');
 const http       = require('http');
 const { Server } = require('socket.io');
@@ -16,11 +17,12 @@ const players = {}; // { socketId: 'player1' | 'player2' }
 let   turn    = 'player1';
 
 io.on('connection', (socket) => {
+
   const takenRoles = Object.values(players);
   if (!takenRoles.includes('player1')) {
     players[socket.id] = 'player1';
     console.log(`Player 1 connected: ${socket.id}`);
-    socket.emit('yourTurn'); // player 1 goes first
+    socket.emit('yourTurn'); 
   } else if (!takenRoles.includes('player2')) {
     players[socket.id] = 'player2';
     console.log(`Player 2 connected: ${socket.id}`);
@@ -30,7 +32,7 @@ io.on('connection', (socket) => {
 
   socket.on('attack', ({ row, col }) => {
     const role = players[socket.id];
-    if (role !== turn) return; // not your turn
+    if (role !== turn) return; 
 
     const targetRole = role === 'player1' ? 'player2' : 'player1';
     const targetId   = Object.keys(players).find(id => players[id] === targetRole);
@@ -49,10 +51,18 @@ io.on('connection', (socket) => {
       io.to(attackerId).emit('attackResult', { row, col, result });
     }
 
-    turn = attackerRole;
-    const nextId = Object.keys(players).find(id => players[id] === turn);
-    if (nextId) io.to(nextId).emit('yourTurn');
+    if (result === 'hit' || result === 'sunk') {
+      const keepId = Object.keys(players).find(id => players[id] === attackerRole);
+      if (keepId) io.to(keepId).emit('yourTurn');
+      console.log(`${attackerRole} hit! They go again.`);
+    } else {
+      turn = defenderRole;
+      const nextId = Object.keys(players).find(id => players[id] === turn);
+      if (nextId) io.to(nextId).emit('yourTurn');
+      console.log(`${attackerRole} missed. ${turn}'s turn now.`);
+    }
   });
+
 
   socket.on('disconnect', () => {
     console.log(`Disconnected: ${socket.id} (${players[socket.id]})`);
@@ -74,5 +84,5 @@ app.post('/hardware-attack', (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\nSASEHacks Battleship server running at http://localhost:${PORT}\n`);
+  console.log(`\n🐊 Gator Battleship server running at http://localhost:${PORT}\n`);
 });
