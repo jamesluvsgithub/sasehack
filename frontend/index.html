@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SASEHacks Battleship</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🐊 GATOR BATTLESHIP</h1>
+      <p id="status-msg">Click a cell to attack!</p>
+    </header>
+
+    <main>
+      <!-- Enemy board (player clicks here to attack) -->
+      <section class="board-section">
+        <h2>Enemy Waters</h2>
+        <div id="enemy-board" class="board"></div>
+      </section>
+
+      <!-- Player board (shows your own ships) -->
+      <section class="board-section">
+        <h2>Your Waters</h2>
+        <div id="player-board" class="board"></div>
+      </section>
+    </main>
+
+    <div id="legend">
+      <span class="legend-item miss">● Miss</span>
+      <span class="legend-item hit">● Hit</span>
+      <span class="legend-item ship">■ Your Ship</span>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

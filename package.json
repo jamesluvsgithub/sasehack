@@ -1,25 +1,17 @@
 {
-  "name": "sasehack",
+  "name": "sasehack-battleship",
   "version": "1.0.0",
-  "description": "read me",
-  "main": "index.js",
+  "description": "Gator Battleship – SASEHacks Art Track",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "dev":   "npx nodemon --quiet backend/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jamesluvsgithub/sasehack.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/jamesluvsgithub/sasehack/issues"
-  },
-  "homepage": "https://github.com/jamesluvsgithub/sasehack#readme",
   "dependencies": {
-    "express": "^5.2.1",
-    "socket.io": "^4.8.3"
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
