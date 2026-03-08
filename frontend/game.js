@@ -61,6 +61,17 @@ const SPRITE = {
 }
 };
 
+const Sounds = {
+  hit: new Audio('assets/SoundEffects/bigger-splash.mp3'),
+  miss: new Audio('assets/SoundEffects/pierce-splash.mp3'),
+  place: new Audio('assets/SoundEffects/place.mp3'),
+  redo: new Audio('assets/SoundEffects/trash.mp3'),
+  winning: new Audio('assets/SoundEffects/winning.mp3'),
+  losing: new Audio('assets/SoundEffects/losing.mp3'),
+}
+
+Object.values(Sounds).forEach(s => { s.preload = 'auto'; s.load(); });
+
 const GIF_DURATION = {
   attacked: 1500,
   miss: 1000,
@@ -207,6 +218,16 @@ function getEndSprite(pos, total) {
   return SPRITE[getSpriteKey(pos,total)].end;
 }
 
+// Sound effects
+function playSound(name) {
+  try {
+    const sound = new Audio(Sounds[name].src);
+    sound.volume = 1.0;
+    const promise = sound.play();
+    if (promise) promise.catch(() => {});
+  } catch(e) {}
+}
+
 // atk gif then freeze
 
 function playAttack(boardId, row, col, pos, total) {
@@ -215,9 +236,11 @@ function playAttack(boardId, row, col, pos, total) {
   const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
   if (!cell) return;
   cell.innerHTML = `<img src="${getAttackedSprite(pos, total)}" width="64" height="64">`;
+  playSound('hit');
   setTimeout(() => {
     cell.innerHTML = `<img src="${getEndSprite(pos, total)}" width="64" height="64">`;
   }, GIF_DURATION.attacked + 100);
+
 }
 
 function playMiss(boardId, row, col) {
@@ -227,11 +250,12 @@ function playMiss(boardId, row, col) {
   if (!cell) return;
 
   cell.innerHTML = `<img src="${SPRITE.miss.anim}" width="64" height="64">`;
-
+  playSound('miss');
   setTimeout(() => {
     cell.innerHTML = `<img src="${SPRITE.miss.end}" width="64" height="64">`;
   }, GIF_DURATION.miss);
 }
+
 
 // ── Placement phase ───────────────────────────
 
@@ -323,6 +347,8 @@ function placementClick(row, col) {
   const cells = getPreviewCells(row, col, ship.size);
   state.placedShips[state.selectedShip] = cells;
   for (const { r, c } of cells) state.playerGrid[r][c] = 'ship';
+  console.log('playing place sound', Sounds.place.src);
+  playSound('place');
 
   const btn = document.getElementById(`ship-btn-${state.selectedShip}`);
   if (btn) { btn.classList.add('placed'); btn.classList.remove('selected'); }
@@ -341,6 +367,7 @@ function placementClick(row, col) {
 }
 
 function resetPlacement() {
+  playSound('redo');
   state.playerGrid      = createGrid();
   state.placedShips     = {};
   state.selectedShip    = 0;
@@ -473,6 +500,7 @@ function checkWin() {
     state.gameOver = true;
     socket.emit('gameOver', { winner: state.myRole });
     showGameOver(true);
+    playSound('winning');
   }
 }
 
@@ -480,6 +508,7 @@ function checkLoss() {
   if (!state.playerGrid.flat().includes('ship')) {
     state.gameOver = true;
     showGameOver(false);
+    playSound('losing');
   }
 }
 
