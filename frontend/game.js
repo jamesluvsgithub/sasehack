@@ -81,7 +81,7 @@ let socket = null;
 try {
   socket = io();
 
-  // Know which player we are
+
   socket.on('assignRole', ({ role }) => {
     state.myRole = role;
     console.log('Assigned role:', role);
@@ -91,20 +91,13 @@ try {
     handleIncomingAttack(row, col);
   });
 
-//   socket.on('attackResult', ({ row, col, result }) => {
-//   applyAttackResult(state.enemyGrid, row, col, result);
-//   renderBoard('enemy-board', state.enemyGrid, false);
-//   updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
-//                result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
-//   checkWin(); 
-// });
 
 socket.on('attackResult', ({ row, col, result }) => {
   applyAttackResult(state.enemyGrid, row, col, result);
   setTimeout(() => {
     renderBoard('enemy-board', state.enemyGrid, false);
-    updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
-                 result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
+    updateStatus(result === 'hit'  ? ' Hit! Go again!'  :
+                 result === 'sunk' ? 'Sunk! Go again!' : 'Miss! Opponent\'s turn.');
     checkWin();
   }, GIF_DURATION.attacked + 200);
 });
@@ -140,7 +133,7 @@ socket.on('yourTurn', () => {
 
   socket.on('opponentDisconnected', () => {
     state.gameOver = true;
-    updateStatus('💀 Opponent disconnected. You win!');
+    updateStatus(' Opponent disconnected. You win!');
   });
 
 } catch (e) {
@@ -176,7 +169,6 @@ function getPlacementCell(r, c) {
   return board ? board.querySelector(`[data-row="${r}"][data-col="${c}"]`) : null;
 }
 
-// ── Sprite helpers ────────────────────────────
 
 function buildSpriteMap() {
   const map = {};
@@ -218,7 +210,7 @@ function getEndSprite(pos, total) {
   return SPRITE[getSpriteKey(pos,total)].end;
 }
 
-// Sound effects
+
 function playSound(name) {
   try {
     const sound = new Audio(Sounds[name].src);
@@ -228,7 +220,7 @@ function playSound(name) {
   } catch(e) {}
 }
 
-// atk gif then freeze
+
 
 function playAttack(boardId, row, col, pos, total) {
   const board = document.getElementById(boardId);
@@ -257,7 +249,7 @@ function playMiss(boardId, row, col) {
 }
 
 
-// ── Placement phase ───────────────────────────
+
 
 function initPlacement() {
   document.getElementById('placement-section').style.display = 'block';
@@ -400,7 +392,7 @@ function showBattle() {
   renderBoard('player-board', state.playerGrid, true);
 }
 
-// ── Battle phase ──────────────────────────────
+
 
 function fireAt(row, col) {
   const cell = state.enemyGrid[row][col];
@@ -426,24 +418,6 @@ function resolveAttack(grid, row, col) {
   return 'miss';
 }
 
-// function applyAttackResult(grid, row, col, result) {
-//   grid[row][col] = (result === 'hit' || result === 'sunk') ? result : 'miss';
-
-//   if (result === 'hit' || result === 'sunk') {
-//     const boardId = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
-//     const board = document.getElementById(boardId);
-//     if (board) {
-//       const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
-//       if (cell) {
-//         cell.innerHTML = `<img src="assets/Sprites/top2tube_attacked.gif" width="64" height="64">`;
-
-//         setTimeout(() => {
-//           cell.innerHTML = `<img src="assets/Sprites/1tube_idle.gif" width="64" height="64">`;
-//         }, 2000);
-//       }
-//     }
-//   }
-// }
 
 function applyAttackResult(grid, row, col, result) {
   const boardId  = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
@@ -459,7 +433,7 @@ function applyAttackResult(grid, row, col, result) {
     } else {
   const board = document.getElementById(boardId);
   const cell  = board?.querySelector(`[data-row="${row}"][data-col="${col}"]`);
-  // HIT ANIMATION
+
   if (cell) {
     cell.innerHTML = `<img src="${SPRITE.hit.anim}" width="64" height="64">`;
     setTimeout(() => {
