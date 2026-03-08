@@ -151,10 +151,6 @@ main {
   animation: hitFlash 0.4s ease-out;
 }
 
-.cell.hit::after {
-  content: '💥';
-  font-size: 22px;
-}
 
 @keyframes hitFlash {
   0%   { background: rgba(255,65,54,0.8); transform: scale(1.15); }
@@ -274,4 +270,39 @@ main {
 
 @media (max-width: 600px) {
   .cell { width: 40px; height: 40px; }
+}
+#gameover-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+#gameover-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: var(--ocean-mid);
+  border: 3px solid var(--gold);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+#gameover-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 20px;
+  color: var(--gold);
+}
+#gameover-msg { font-size: 24px; color: var(--foam); }
+#gameover-box button {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 2px solid var(--ship-green);
+  background: transparent;
+  color: var(--ship-green);
 }

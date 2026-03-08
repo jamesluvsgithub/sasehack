@@ -20,6 +20,48 @@ const state = {
   hoverCells:      []
 };
 
+const SPRITE = {
+  tube1: {
+    idle:     'assets/Sprites/1tube_idle.gif',
+    attacked: 'assets/Sprites/1tube_attacked.gif',
+    end:      'assets/Sprites/1tube_ending.png',
+  },
+  top2: {
+    idle:     'assets/Sprites/top2tube_idle.gif',
+    attacked: 'assets/Sprites/top2tube_attacked.gif',
+    end:      'assets/Sprites/top2tube_ending.png',
+  },
+  bottom2: {
+    idle:     'assets/Sprites/bottom2tube_idle.gif',
+    attacked: 'assets/Sprites/bottom2tube_attacked.gif',
+    end:      'assets/Sprites/bottom2tube_ending.png',
+  },
+  left3: {
+    idle:     'assets/Sprites/left3tube_gatorsprite_idle.gif',
+    attacked: 'assets/Sprites/left3tube_attacked.gif',
+    end:      'assets/Sprites/left3tube_ending.png',
+  },
+  mid3: {
+    idle:     'assets/Sprites/mid3tube_gatorsprite_idle.gif',
+    attacked: 'assets/Sprites/mid3tube_attacked.gif',
+    end:      'assets/Sprites/mid3tube_ending.png',
+  },
+  right3: {
+    idle:     'assets/Sprites/right3tube_gatorsprite_idle.gif',
+    attacked: 'assets/Sprites/right3tube_attacked.gif',
+    end:      'assets/Sprites/right3tube_ending.png',
+  },
+  miss: {
+    anim: 'assets/Sprites/miss_animation.gif',
+    end:  'assets/Sprites/miss_ending.png',
+  }
+};
+
+const GIF_DURATION = {
+  attacked: 1500,
+  miss: 1000,
+};
+
 let socket = null;
 try {
   socket = io();
@@ -34,12 +76,22 @@ try {
     handleIncomingAttack(row, col);
   });
 
-  socket.on('attackResult', ({ row, col, result }) => {
+//   socket.on('attackResult', ({ row, col, result }) => {
+//   applyAttackResult(state.enemyGrid, row, col, result);
+//   renderBoard('enemy-board', state.enemyGrid, false);
+//   updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
+//                result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
+//   checkWin(); 
+// });
+
+socket.on('attackResult', ({ row, col, result }) => {
   applyAttackResult(state.enemyGrid, row, col, result);
-  renderBoard('enemy-board', state.enemyGrid, false);
-  updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
-               result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
-  checkWin(); 
+  setTimeout(() => {
+    renderBoard('enemy-board', state.enemyGrid, false);
+    updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
+                 result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
+    checkWin();
+  }, GIF_DURATION.attacked + 100);
 });
 
 socket.on('yourTurn', () => {
@@ -55,7 +107,7 @@ socket.on('yourTurn', () => {
   // winner is 'player1' or 'player2' — compare to our role
   socket.on('gameOver', ({ winner }) => {
     state.gameOver = true;
-    updateStatus(winner === state.myRole ? '🎉 YOU WIN!' : '💀 You lose...');
+    showGameOver(winner === state.myRole);
   });
 
   socket.on('waitingForPlacement', () => {
@@ -125,14 +177,56 @@ function buildSpriteMap() {
   return map;
 }
 
-function getShipSprite(shipIndex, pos, total) {
-  if (total === 1) return 'assets/Sprites/1tube_idle.gif';
-  if (total === 2) return pos === 0 ? 'assets/Sprites/top2tube_idle.gif' : 'assets/Sprites/bottom2tube_idle.gif';
+function getSpriteKey(pos, total) {
+  if (total === 1) return 'tube1';
+  if (total === 2) return pos === 0 ? 'top2' : 'bottom2';
   if (total === 3) {
-    if (pos === 0) return 'assets/Sprites/left3tube_gatorsprite_idle.gif';
-    if (pos === 1) return 'assets/Sprites/mid3tube_gatorsprite_idle.gif';
-    return 'assets/Sprites/right3tube_gatorsprite_idle.gif';
+    if (pos === 0) return 'left3';
+    if (pos === 1) return 'mid3';
+    return 'right3';
   }
+}
+
+function getShipSprite(shipIndex, pos, total) {
+  return SPRITE[getSpriteKey(pos, total)].idle;
+}
+
+function getIdleSprite(pos, total) {
+  return SPRITE[getSpriteKey(pos,total)].idle;
+}
+
+function getAttackedSprite(pos, total) {
+  return SPRITE[getSpriteKey(pos, total)]. attacked;
+}
+
+function getEndSprite(pos, total) {
+  return SPRITE[getSpriteKey(pos,total)].end;
+}
+
+// atk gif then freeze
+
+function playAttack(boardId, row, col, pos, total) {
+  const board = document.getElementById(boardId);
+  if (!board) return;
+  const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+  if (!cell) return;
+  cell.innerHTML = `<img src="${getAttackedSprite(pos, total)}" width="64" height="64">`;
+  setTimeout(() => {
+    cell.innerHTML = `<img src="${getEndSprite(pos, total)}" width="64" height="64">`;
+  }, GIF_DURATION.attacked);
+}
+
+function playMiss(boardId, row, col) {
+  const board = document.getElementById(boardId);
+  if (!board) return;
+  const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+  if (!cell) return;
+
+  cell.innerHTML = `<img src="${SPRITE.miss.anim}" width="64" height="64">`;
+
+  setTimeout(() => {
+    cell.innerHTML = `<img src="${SPRITE.miss.end}" width="64" height="64">`;
+  }, GIF_DURATION.miss);
 }
 
 // ── Placement phase ───────────────────────────
@@ -301,30 +395,67 @@ function resolveAttack(grid, row, col) {
   return 'miss';
 }
 
+// function applyAttackResult(grid, row, col, result) {
+//   grid[row][col] = (result === 'hit' || result === 'sunk') ? result : 'miss';
+
+//   if (result === 'hit' || result === 'sunk') {
+//     const boardId = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
+//     const board = document.getElementById(boardId);
+//     if (board) {
+//       const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+//       if (cell) {
+//         cell.innerHTML = `<img src="assets/Sprites/top2tube_attacked.gif" width="64" height="64">`;
+
+//         setTimeout(() => {
+//           cell.innerHTML = `<img src="assets/Sprites/1tube_idle.gif" width="64" height="64">`;
+//         }, 2000);
+//       }
+//     }
+//   }
+// }
+
 function applyAttackResult(grid, row, col, result) {
+  const boardId  = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
+  const isPlayer = (grid === state.playerGrid);
+  const spriteMap = isPlayer ? buildSpriteMap() : {};
+  const sprite    = spriteMap[`${row}_${col}`];
+
   grid[row][col] = (result === 'hit' || result === 'sunk') ? result : 'miss';
 
   if (result === 'hit' || result === 'sunk') {
-    const boardId = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
-    const board = document.getElementById(boardId);
-    if (board) {
-      const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
-      if (cell) {
-        cell.innerHTML = `<img src="assets/Sprites/top2tube_attacked.gif" width="64" height="64">`;
-        setTimeout(() => {
-          cell.innerHTML = `<img src="assets/Sprites/1tube_idle.gif" width="64" height="64">`;
-        }, 2000);
-      }
+    if (sprite) {
+      playAttack(boardId, row, col, sprite.pos, sprite.total);
+    } else {
+      // enemy board — no sprite map, just play miss-style flash
+      const board = document.getElementById(boardId);
+      const cell  = board?.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+      if (cell) cell.classList.add('hit');
     }
+  } else {
+    playMiss(boardId, row, col);
   }
 }
 
 function handleIncomingAttack(row, col) {
   const result = resolveAttack(state.playerGrid, row, col);
   applyAttackResult(state.playerGrid, row, col, result);
-  renderBoard('player-board', state.playerGrid, true);
   if (socket) socket.emit('attackResult', { row, col, result });
   checkLoss();
+  // delay renderBoard so the gif has time to play first
+  setTimeout(() => {
+    renderBoard('player-board', state.playerGrid, true);
+  }, GIF_DURATION.miss + 100);
+}
+
+function showGameOver(iWon) {
+  const overlay = document.getElementById('gameover-overlay');
+  const title   = document.getElementById('gameover-title');
+  const msg     = document.getElementById('gameover-msg');
+  title.textContent = iWon ? '🏆 VICTORY!'  : '💀 DEFEATED!';
+  msg.textContent   = iWon
+    ? 'You defloated all the gators!'
+    : 'Your gators got defloated...';
+  overlay.style.display = 'flex';
 }
 
 function checkWin() {
@@ -332,16 +463,18 @@ function checkWin() {
   if (hits >= 6) {
     state.gameOver = true;
     socket.emit('gameOver', { winner: state.myRole });
-    updateStatus('🎉 YOU WIN! All gators sunk!');
+    showGameOver(true);
   }
 }
 
 function checkLoss() {
   if (!state.playerGrid.flat().includes('ship')) {
     state.gameOver = true;
-    updateStatus('💀 Your fleet is sunk! Game over.');
+    showGameOver(false);
   }
 }
+
+
 
 function renderBoard(boardId, grid, isPlayer) {
   const boardEl = document.getElementById(boardId);
@@ -357,12 +490,17 @@ function renderBoard(boardId, grid, isPlayer) {
 
       const val = grid[r][c];
 
-      if (val === 'hit')  cell.classList.add('hit');
-      if (val === 'sunk') cell.classList.add('sunk');
+      if (val === 'hit' || val === 'sunk') {
+        cell.classList.add(val);
+        const sprite = spriteMap[`${r}_${c}`];
+        if (sprite) {
+        cell.innerHTML = `<img src="${getEndSprite(sprite.pos, sprite.total)}" width="64" height="64">`;
+        }
+}
 
       if (val === 'miss') {
         cell.classList.add('miss');
-        cell.innerHTML = `<img src="assets/Sprites/miss_animation.gif" width="64" height="64">`;
+        cell.innerHTML = `<img src="${SPRITE.miss.end}" width="64" height="64">`;
       }
 
       if (isPlayer && val === 'ship') {
