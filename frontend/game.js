@@ -24,37 +24,41 @@ const SPRITE = {
   tube1: {
     idle:     'assets/Sprites/1tube_idle.gif',
     attacked: 'assets/Sprites/1tube_attacked.gif',
-    end:      'assets/Sprites/1tube_ending.png',
+    end:      'assets/Sprites/1tube_ending.gif',
   },
   top2: {
     idle:     'assets/Sprites/top2tube_idle.gif',
     attacked: 'assets/Sprites/top2tube_attacked.gif',
-    end:      'assets/Sprites/top2tube_ending.png',
+    end:      'assets/Sprites/top2tube_ending.gif',
   },
   bottom2: {
     idle:     'assets/Sprites/bottom2tube_idle.gif',
     attacked: 'assets/Sprites/bottom2tube_attacked.gif',
-    end:      'assets/Sprites/bottom2tube_ending.png',
+    end:      'assets/Sprites/bottom2tube_ending.gif',
   },
   left3: {
     idle:     'assets/Sprites/left3tube_gatorsprite_idle.gif',
     attacked: 'assets/Sprites/left3tube_attacked.gif',
-    end:      'assets/Sprites/left3tube_ending.png',
+    end:      'assets/Sprites/left3tube_ending.gif',
   },
   mid3: {
     idle:     'assets/Sprites/mid3tube_gatorsprite_idle.gif',
     attacked: 'assets/Sprites/mid3tube_attacked.gif',
-    end:      'assets/Sprites/mid3tube_ending.png',
+    end:      'assets/Sprites/mid3tube_ending.gif',
   },
   right3: {
     idle:     'assets/Sprites/right3tube_gatorsprite_idle.gif',
     attacked: 'assets/Sprites/right3tube_attacked.gif',
-    end:      'assets/Sprites/right3tube_ending.png',
+    end:      'assets/Sprites/right3tube_ending.gif',
   },
   miss: {
     anim: 'assets/Sprites/miss_animation.gif',
     end:  'assets/Sprites/miss_ending.png',
-  }
+  },
+  hit: {
+  anim: 'assets/Sprites/hit_animation.gif',
+  end:  'assets/Sprites/hit_animation_end.gif',
+}
 };
 
 const GIF_DURATION = {
@@ -91,7 +95,7 @@ socket.on('attackResult', ({ row, col, result }) => {
     updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
                  result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
     checkWin();
-  }, GIF_DURATION.attacked + 100);
+  }, GIF_DURATION.attacked + 200);
 });
 
 socket.on('yourTurn', () => {
@@ -213,7 +217,7 @@ function playAttack(boardId, row, col, pos, total) {
   cell.innerHTML = `<img src="${getAttackedSprite(pos, total)}" width="64" height="64">`;
   setTimeout(() => {
     cell.innerHTML = `<img src="${getEndSprite(pos, total)}" width="64" height="64">`;
-  }, GIF_DURATION.attacked);
+  }, GIF_DURATION.attacked + 100);
 }
 
 function playMiss(boardId, row, col) {
@@ -426,11 +430,16 @@ function applyAttackResult(grid, row, col, result) {
     if (sprite) {
       playAttack(boardId, row, col, sprite.pos, sprite.total);
     } else {
-      // enemy board — no sprite map, just play miss-style flash
-      const board = document.getElementById(boardId);
-      const cell  = board?.querySelector(`[data-row="${row}"][data-col="${col}"]`);
-      if (cell) cell.classList.add('hit');
-    }
+  const board = document.getElementById(boardId);
+  const cell  = board?.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+  // HIT ANIMATION
+  if (cell) {
+    cell.innerHTML = `<img src="${SPRITE.hit.anim}" width="64" height="64">`;
+    setTimeout(() => {
+      cell.innerHTML = `<img src="${SPRITE.hit.end}" width="64" height="64">`;
+    }, GIF_DURATION.attacked + 200);
+  }
+}
   } else {
     playMiss(boardId, row, col);
   }
@@ -444,7 +453,7 @@ function handleIncomingAttack(row, col) {
   // delay renderBoard so the gif has time to play first
   setTimeout(() => {
     renderBoard('player-board', state.playerGrid, true);
-  }, GIF_DURATION.miss + 100);
+  }, GIF_DURATION.attacked + 200);
 }
 
 function showGameOver(iWon) {
@@ -494,9 +503,11 @@ function renderBoard(boardId, grid, isPlayer) {
         cell.classList.add(val);
         const sprite = spriteMap[`${r}_${c}`];
         if (sprite) {
-        cell.innerHTML = `<img src="${getEndSprite(sprite.pos, sprite.total)}" width="64" height="64">`;
+          cell.innerHTML = `<img src="${getEndSprite(sprite.pos, sprite.total)}" width="64" height="64">`;
+        } else {
+          cell.innerHTML = `<img src="${SPRITE.hit.end}" width="64" height="64">`;
         }
-}
+      }
 
       if (val === 'miss') {
         cell.classList.add('miss');
