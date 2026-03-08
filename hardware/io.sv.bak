@@ -1,0 +1,21 @@
+module button_test (
+    input  logic [7:0] player1_left_in,
+    input  logic [7:0] player1_rite_in,
+    input  logic [7:0] player2_left_in,
+    input  logic [7:0] player2_rite_in,
+
+    output logic [7:0] player1_left_out, 
+    output logic [7:0] player1_rite_out, 
+    output logic [7:0] player2_left_out, 
+    output logic [7:0] player2_rite_out
+);
+
+
+    assign player1_left_out = player1_left_in;
+    assign player1_rite_out = player1_rite_in;
+    
+    assign player2_left_out = player2_left_in;
+    assign player2_rite_out = player2_rite_out;
+
+
+endmodule

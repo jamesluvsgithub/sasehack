@@ -1,0 +1,1270 @@
+05:35:17 **** Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/Target/usbd_conf.d" -MT"USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_desc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_desc.d" -MT"USB_DEVICE/App/usbd_desc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_desc.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f439zitx.d" -MT"Core/Startup/startup_stm32f439zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f439zitx.o" "../Core/Startup/startup_stm32f439zitx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:30: error: 'GPIO_Pin_7' undeclared (first use in this function); did you mean 'GPIO_PIN_7'?
+    HAL_GPIO_TogglePin(GPIOB, GPIO_Pin_7);
+                              ^~~~~~~~~~
+                              GPIO_PIN_7
+../Core/Src/main.c:110:30: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:152:11: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+    while (CDC_Transmit_FS(buffer, 4) == USBD_BUSY);
+           ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+05:38:40 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:30: error: 'GPIO_Pin_7' undeclared (first use in this function); did you mean 'GPIO_PIN_7'?
+    HAL_GPIO_TogglePin(GPIOB, GPIO_Pin_7);
+                              ^~~~~~~~~~
+                              GPIO_PIN_7
+../Core/Src/main.c:111:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+05:39:58 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-size   usb_transmit.elf 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+   text	   data	    bss	    dec	    hex	filename
+  31700	    492	   4004	  36196	   8d64	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+05:41:04 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31700	    492	   4004	  36196	   8d64	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+05:41:09 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31700	    492	   4004	  36196	   8d64	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+05:41:23 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31700	    492	   4004	  36196	   8d64	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+05:41:38 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31700	    492	   4004	  36196	   8d64	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+05:42:09 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: unused variable 'packet' [-Wunused-variable]
+  uint64_t packet = 0;
+           ^~~~~~
+../Core/Src/main.c:102:10: warning: unused variable 'buffer' [-Wunused-variable]
+  uint8_t buffer[4];
+          ^~~~~~
+../Core/Src/main.c:101:19: warning: unused variable 'new_clk' [-Wunused-variable]
+  uint8_t clk = 0, new_clk = 0;
+                   ^~~~~~~
+../Core/Src/main.c:101:10: warning: unused variable 'clk' [-Wunused-variable]
+  uint8_t clk = 0, new_clk = 0;
+          ^~~
+../Core/Src/main.c:100:10: warning: unused variable 'i' [-Wunused-variable]
+  uint8_t i = 0;
+          ^
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31132	    492	   4004	  35628	   8b2c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+05:42:25 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31132	    492	   4004	  35628	   8b2c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+05:42:43 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:215:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28888	    492	   4004	  33384	   8268	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+05:53:34 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:121:13: warning: unused variable 'player2_input' [-Wunused-variable]
+     uint8_t player2_input = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_6);
+             ^~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:203:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28872	    492	   4004	  33368	   8258	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+05:54:35 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:122:13: warning: unused variable 'player2_input' [-Wunused-variable]
+     uint8_t player2_input = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_6);
+             ^~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:204:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28880	    492	   4004	  33376	   8260	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:11:25 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:18: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+  uint8_t* test = "Hello, World!\n";
+                  ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:116:34: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+     CDC_Transmit_FS(test, strlen(test));
+                                  ^~~~
+In file included from ../USB_DEVICE/Target/usbd_conf.h:33:0,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/App/usb_device.h:33,
+                 from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\string.h:41:9: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ size_t  strlen (const char *);
+         ^~~~~~
+../Core/Src/main.c:131:13: warning: unused variable 'player2_input' [-Wunused-variable]
+     uint8_t player2_input = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_6);
+             ^~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:213:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28492	    492	   4004	  32988	   80dc	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:13:45 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:18: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+  uint8_t* test = "Hello, World!\n";
+                  ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:116:34: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+     CDC_Transmit_FS(test, strlen(test));
+                                  ^~~~
+In file included from ../USB_DEVICE/Target/usbd_conf.h:33:0,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/App/usb_device.h:33,
+                 from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\string.h:41:9: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ size_t  strlen (const char *);
+         ^~~~~~
+../Core/Src/main.c:132:13: warning: unused variable 'player2_input' [-Wunused-variable]
+     uint8_t player2_input = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_6);
+             ^~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:214:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28560	    492	   4004	  33056	   8120	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:25:02 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:34: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+     CDC_Transmit_FS(test, strlen(test));
+                                  ^~~~
+In file included from ../USB_DEVICE/Target/usbd_conf.h:33:0,
+                 from ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from ../USB_DEVICE/App/usb_device.h:33,
+                 from ../Core/Src/main.c:22:
+c:\st\stm32cubeide_1.5.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\string.h:41:9: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ size_t  strlen (const char *);
+         ^~~~~~
+At top level:
+../Core/Src/main.c:213:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28580	    492	   4004	  33076	   8134	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:26:27 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:216:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28588	    492	   4004	  33084	   813c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:29:43 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:220:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28636	    492	   4004	  33132	   816c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:31:06 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: 'hUsbDeviceFS' undeclared (first use in this function)
+    while (hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED)
+           ^~~~~~~~~~~~
+../Core/Src/main.c:113:11: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../Core/Src/main.c:225:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+06:31:08 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: 'hUsbDeviceFS' undeclared (first use in this function)
+    while (hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED)
+           ^~~~~~~~~~~~
+../Core/Src/main.c:113:11: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../Core/Src/main.c:225:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+06:34:50 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:219:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28636	    492	   4004	  33132	   816c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:36:23 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:222:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28948	    492	   4004	  33444	   82a4	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:36:54 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:43: error: 'USB_BUSY' undeclared (first use in this function); did you mean 'USBD_BUSY'?
+      while (CDC_Transmit_FS(buffer, 4) == USB_BUSY)
+                                           ^~~~~~~~
+                                           USBD_BUSY
+../Core/Src/main.c:153:43: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:105:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:222:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+06:37:04 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:222:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28948	    492	   4004	  33444	   82a4	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:51:05 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:218:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28636	    492	   4004	  33132	   816c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:56:09 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:220:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28636	    492	   4004	  33132	   816c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+06:58:35 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:11: error: 'hUsbDeviceFS' undeclared (first use in this function)
+     while(hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED)
+           ^~~~~~~~~~~~
+../Core/Src/main.c:115:11: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../Core/Src/main.c:225:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+06:59:50 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:226:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:02:29 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:228:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28668	    492	   4004	  33164	   818c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:13:26 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:231:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28664	    492	   4004	  33160	   8188	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:14:29 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:230:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:15:47 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:234:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:16:13 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:22:44 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:234:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:29:01 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../USB_DEVICE/App/usbd_cdc_if.c: In function 'CDC_Transmit_FS':
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: error: 'hUsbDevice_0' undeclared (first use in this function); did you mean 'hUsbDeviceFS'?
+     if ((hUsbDevice_0->dev_state != USBD_STATE_CONFIGURED)
+          ^~~~~~~~~~~~
+          hUsbDeviceFS
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [USB_DEVICE/App/subdir.mk:26: USB_DEVICE/App/usbd_cdc_if.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:234:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:31:16 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+../USB_DEVICE/App/usbd_cdc_if.c: In function 'CDC_Transmit_FS':
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: error: 'hUsbDeviceFs' undeclared (first use in this function); did you mean 'hUsbDeviceFS'?
+     if ((hUsbDeviceFs->dev_state != USBD_STATE_CONFIGURED)
+          ^~~~~~~~~~~~
+          hUsbDeviceFS
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: note: each undeclared identifier is reported only once for each function it appears in
+../USB_DEVICE/App/usbd_cdc_if.c:290:29: error: invalid type argument of '->' (have 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}')
+             || (hUsbDeviceFS->ep0_state == USBD_EP0_STATUS_IN))
+                             ^~
+../USB_DEVICE/App/usbd_cdc_if.c:299:30: error: incompatible type for argument 1 of 'USBD_CDC_SetTxBuffer'
+         USBD_CDC_SetTxBuffer(hUsbDeviceFS, Buf, Len);
+                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:151:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_SetTxBuffer(USBD_HandleTypeDef *pdev, uint8_t *pbuff,
+         ^~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/App/usbd_cdc_if.c:306:30: error: invalid type argument of '->' (have 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}')
+             if ((hUsbDeviceFS->dev_state != USBD_STATE_CONFIGURED)
+                              ^~
+../USB_DEVICE/App/usbd_cdc_if.c:307:41: error: invalid type argument of '->' (have 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}')
+                         || (hUsbDeviceFS->ep0_state == USBD_EP0_STATUS_IN))
+                                         ^~
+../USB_DEVICE/App/usbd_cdc_if.c:314:46: error: incompatible type for argument 1 of 'USBD_CDC_TransmitPacket'
+             result = USBD_CDC_TransmitPacket(hUsbDeviceFS);
+                                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+         ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [USB_DEVICE/App/subdir.mk:26: USB_DEVICE/App/usbd_cdc_if.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:32:52 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+../USB_DEVICE/App/usbd_cdc_if.c: In function 'CDC_Transmit_FS':
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: error: 'hUsbDeviceFs' undeclared (first use in this function); did you mean 'hUsbDeviceFS'?
+     if ((hUsbDeviceFs.dev_state != USBD_STATE_CONFIGURED)
+          ^~~~~~~~~~~~
+          hUsbDeviceFS
+../USB_DEVICE/App/usbd_cdc_if.c:289:10: note: each undeclared identifier is reported only once for each function it appears in
+../USB_DEVICE/App/usbd_cdc_if.c:299:30: error: incompatible type for argument 1 of 'USBD_CDC_SetTxBuffer'
+         USBD_CDC_SetTxBuffer(hUsbDeviceFS, Buf, Len);
+                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:151:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_SetTxBuffer(USBD_HandleTypeDef *pdev, uint8_t *pbuff,
+         ^~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/App/usbd_cdc_if.c:314:46: error: incompatible type for argument 1 of 'USBD_CDC_TransmitPacket'
+             result = USBD_CDC_TransmitPacket(hUsbDeviceFS);
+                                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+         ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [USB_DEVICE/App/subdir.mk:26: USB_DEVICE/App/usbd_cdc_if.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:34:13 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+../USB_DEVICE/App/usbd_cdc_if.c: In function 'CDC_Transmit_FS':
+../USB_DEVICE/App/usbd_cdc_if.c:300:30: error: incompatible type for argument 1 of 'USBD_CDC_SetTxBuffer'
+         USBD_CDC_SetTxBuffer(hUsbDeviceFS, Buf, Len);
+                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:151:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_SetTxBuffer(USBD_HandleTypeDef *pdev, uint8_t *pbuff,
+         ^~~~~~~~~~~~~~~~~~~~
+../USB_DEVICE/App/usbd_cdc_if.c:315:46: error: incompatible type for argument 1 of 'USBD_CDC_TransmitPacket'
+             result = USBD_CDC_TransmitPacket(hUsbDeviceFS);
+                                              ^~~~~~~~~~~~
+In file included from ../USB_DEVICE/App/usbd_cdc_if.h:31:0,
+                 from ../USB_DEVICE/App/usbd_cdc_if.c:23:
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:156:9: note: expected 'USBD_HandleTypeDef * {aka struct _USBD_HandleTypeDef *}' but argument is of type 'USBD_HandleTypeDef {aka struct _USBD_HandleTypeDef}'
+ uint8_t USBD_CDC_TransmitPacket(USBD_HandleTypeDef *pdev);
+         ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [USB_DEVICE/App/subdir.mk:26: USB_DEVICE/App/usbd_cdc_if.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:34:58 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	    492	   4004	  33200	   81b0	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:35:40 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	    492	   4004	  33200	   81b0	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+07:35:53 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	    492	   4004	  33200	   81b0	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+07:36:06 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	    492	   4004	  33200	   81b0	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+07:40:59 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../USB_DEVICE/App/usbd_cdc_if.c:129:15: warning: 'CDC_TransmitCplt_FS' used but never defined
+ static int8_t CDC_TransmitCplt_FS(uint8_t *pbuf, uint32_t *Len, uint8_t epnum);
+               ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:243:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+../Core/Src/main.c:108:8: warning: 'CDC_TransmitCplt_FS' defined but not used [-Wunused-function]
+   void CDC_TransmitCplt_FS(uint8_t *Buf, uint32_t *Len, uint8_t epnum)
+        ^~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+USB_DEVICE/App/usbd_cdc_if.o:(.data.USBD_Interface_fops_FS+0x10): undefined reference to `CDC_TransmitCplt_FS'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:62: usb_transmit.elf] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:41:49 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:234:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:42:03 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28656	    492	   4004	  33152	   8180	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+07:44:02 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:235:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28924	    492	   4004	  33420	   828c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:45:01 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:236:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28928	    492	   4004	  33424	   8290	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:46:29 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:237:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28940	    492	   4004	  33436	   829c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+07:47:04 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:237:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28940	    492	   4004	  33436	   829c	usb_transmit.elf
+Finished building: default.size.stdout
+Finished building: usb_transmit.bin
+ 
+ 
+Finished building: usb_transmit.list
+ 
+07:57:44 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+../Core/Src/main.c: In function 'SystemClock_Config':
+../Core/Src/main.c:200:20: error: 'RCC_OscInitTypeDef {aka struct <anonymous>}' has no member named 'HSEPredivValue'
+   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+                    ^
+../Core/Src/main.c:200:38: error: 'RCC_HSE_PREDIV_DIV1' undeclared (first use in this function); did you mean 'RTC_PRER_PREDIV_S'?
+   RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
+                                      ^~~~~~~~~~~~~~~~~~~
+                                      RTC_PRER_PREDIV_S
+../Core/Src/main.c:200:38: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:204:25: error: 'RCC_PLLInitTypeDef {aka struct <anonymous>}' has no member named 'PLLMUL'; did you mean 'PLLM'?
+   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+                         ^~~~~~
+                         PLLM
+../Core/Src/main.c:204:34: error: 'RCC_PLL_MUL9' undeclared (first use in this function); did you mean 'RCC_PLLMUL_8'?
+   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+                                  ^~~~~~~~~~~~
+                                  RCC_PLLMUL_8
+../Core/Src/main.c:222:40: error: 'RCC_PERIPHCLK_USB' undeclared (first use in this function); did you mean 'RCC_PERIPHCLK_TIM'?
+   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USB;
+                                        ^~~~~~~~~~~~~~~~~
+                                        RCC_PERIPHCLK_TIM
+../Core/Src/main.c:223:17: error: 'RCC_PeriphCLKInitTypeDef {aka struct <anonymous>}' has no member named 'UsbClockSelection'; did you mean 'RTCClockSelection'?
+   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
+                 ^~~~~~~~~~~~~~~~~
+                 RTCClockSelection
+../Core/Src/main.c:223:37: error: 'RCC_USBCLKSOURCE_PLL_DIV1_5' undeclared (first use in this function); did you mean 'RCC_RTCCLKSOURCE_HSE_DIV15'?
+   PeriphClkInit.UsbClockSelection = RCC_USBCLKSOURCE_PLL_DIV1_5;
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                     RCC_RTCCLKSOURCE_HSE_DIV15
+At top level:
+../Core/Src/main.c:235:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+07:58:45 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:112:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:234:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28844	    492	   4004	  33340	   823c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:02:29 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:28: warning: unused variable 'hUsbDeviceFS' [-Wunused-variable]
+  extern USBD_HandleTypeDef hUsbDeviceFS;
+                            ^~~~~~~~~~~~
+../Core/Src/main.c:114:10: warning: unused variable 'test' [-Wunused-variable]
+  uint8_t test[] = "Hello World!\r\n";
+          ^~~~
+At top level:
+../Core/Src/main.c:362:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28860	    492	   4004	  33356	   824c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:02:49 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:362:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28668	    492	   4004	  33164	   818c	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:12:33 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:363:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:238:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28672	    492	   4004	  33168	   8190	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:25:22 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/Target/usbd_conf.d" -MT"USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usb_device.d" -MT"USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_desc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_desc.d" -MT"USB_DEVICE/App/usbd_desc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_desc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:9: warning: implicit declaration of function 'CDC_Transmit_FS' [-Wimplicit-function-declaration]
+     if (CDC_Transmit_FS(test, strlen((char*)test)) == USBD_OK)
+         ^~~~~~~~~~~~~~~
+At top level:
+../Core/Src/main.c:353:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31476	    492	   4004	  35972	   8c84	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:26:24 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:363:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31480	    492	   4004	  35976	   8c88	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:26:44 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'MX_ETH_Init'; did you mean 'HAL_ETH_Init'? [-Wimplicit-function-declaration]
+   MX_ETH_Init();
+   ^~~~~~~~~~~
+   HAL_ETH_Init
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:237:13: warning: conflicting types for 'MX_ETH_Init'
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+../Core/Src/main.c:237:13: error: static declaration of 'MX_ETH_Init' follows non-static declaration
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'MX_ETH_Init' was here
+   MX_ETH_Init();
+   ^~~~~~~~~~~
+../Core/Src/main.c:362:13: warning: 'GPIO_Init_USB_Connect' defined but not used [-Wunused-function]
+ static void GPIO_Init_USB_Connect(void)
+             ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:237:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:33: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+08:28:10 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:239:13: warning: 'MX_ETH_Init' defined but not used [-Wunused-function]
+ static void MX_ETH_Init(void)
+             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28744	    492	   4004	  33240	   81d8	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:45:00 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+../USB_DEVICE/App/usbd_cdc_if.c: In function 'CDC_Control_FS':
+../USB_DEVICE/App/usbd_cdc_if.c:232:3: error: expected ';' before 'LineCoding'
+   LineCoding.format = pbuf[4];
+   ^~~~~~~~~~
+make: *** [USB_DEVICE/App/subdir.mk:26: USB_DEVICE/App/usbd_cdc_if.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+08:45:21 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-gcc "../USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F439xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"USB_DEVICE/App/usbd_cdc_if.d" -MT"USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc -o "usb_transmit.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="usb_transmit.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: usb_transmit.elf
+ 
+arm-none-eabi-objdump -h -S  usb_transmit.elf  > "usb_transmit.list"
+arm-none-eabi-objcopy  -O binary  usb_transmit.elf  "usb_transmit.bin"
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28888	    500	   4004	  33392	   8270	usb_transmit.elf
+Finished building: default.size.stdout
+ 
+Finished building: usb_transmit.bin
+ 
+Finished building: usb_transmit.list
+ 
+08:50:46 **** Incremental Build of configuration Debug for project usb_transmit ****
+make -j20 all 
+arm-none-eabi-size   usb_transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28888	    500	   4004	  33392	   8270	usb_transmit.elf
+Finished building: default.size.stdout
+ 
