@@ -96,8 +96,8 @@ socket.on('attackResult', ({ row, col, result }) => {
   applyAttackResult(state.enemyGrid, row, col, result);
   setTimeout(() => {
     renderBoard('enemy-board', state.enemyGrid, false);
-    updateStatus(result === 'hit'  ? ' Hit! Go again!'  :
-                 result === 'sunk' ? 'Sunk! Go again!' : 'Miss! Opponent\'s turn.');
+    updateStatus(result === 'hit'  ? ' BOOOOM YOU HIT GO AGAIN'  :
+                 result === 'sunk' ? 'BOOOOM YOU HIT GO AGAIN' : 'rip you missed opponent turn now');
     checkWin();
   }, GIF_DURATION.attacked + 200);
 });
@@ -105,14 +105,13 @@ socket.on('attackResult', ({ row, col, result }) => {
 socket.on('yourTurn', () => {
   if (state.gameOver) return;
   state.myTurn = true;
-  updateStatus('Click a cell to defloat a SASEgator!');
+  updateStatus('click a cell to defloat a SASEgator!');
 });
 
   socket.on('hardwareAttack', ({ row, col }) => {
     if (state.myTurn && !state.gameOver) fireAt(row, col);
   });
 
-  // winner is 'player1' or 'player2' — compare to our role
   socket.on('gameOver', ({ winner }) => {
     state.gameOver = true;
     showGameOver(winner === state.myRole);
@@ -124,16 +123,16 @@ socket.on('yourTurn', () => {
 
   socket.on('gameStart', () => {
     showBattle();
-    updateStatus('Game started! Waiting for your turn...');
+    updateStatus('GAME HAS STARTED! ermm waiting for your turn...');
   });
 
   socket.on('waitingForOpponent', () => {
-    updateStatus('Waiting for opponent to place their gators...');
+    updateStatus('waiting for slow ahh opponent to place their gators...');
   });
 
   socket.on('opponentDisconnected', () => {
     state.gameOver = true;
-    updateStatus(' Opponent disconnected. You win!');
+    updateStatus('opponent disconnected into the ocean. BOOOM YOU WIN');
   });
 
 } catch (e) {
@@ -351,7 +350,7 @@ function placementClick(row, col) {
   } else {
     state.selectedShip    = null;
     state.awaitingConfirm = true;
-    updateStatus('All gators placed! Press any button to confirm!');
+    updateStatus('all gators placed! press any button to confirm!');
     document.getElementById('ready-btn').disabled = false;
   }
 
@@ -381,7 +380,7 @@ function readyUp() {
   });
   socket.emit('placeShips', { ships: allCells });
   document.getElementById('ready-btn').disabled = true;
-  updateStatus('Waiting for opponent to place their gators...');
+  updateStatus('waiting for slow ahh opponent to place their gators...');
 }
 
 function showBattle() {
@@ -398,14 +397,14 @@ function fireAt(row, col) {
   const cell = state.enemyGrid[row][col];
   if (cell === 'hit' || cell === 'miss' || cell === 'sunk') return;
   if (!state.myTurn || state.gameOver) return;
-  state.myTurn = false; // ← lock immediately so they can't double-fire
+  state.myTurn = false; 
   if (socket) {
     socket.emit('attack', { row, col });
   } else {
     const result = resolveAttack(state.enemyGrid, row, col);
     applyAttackResult(state.enemyGrid, row, col, result);
     renderBoard('enemy-board', state.enemyGrid, false);
-    updateStatus(result === 'hit' ? '💥 Hit!' : '🌊 Miss!');
+    updateStatus(result === 'hit' ? 'BOOOOM YOU HIT!' : 'rip you missed!');
     checkWin();
   }
 }
@@ -451,7 +450,6 @@ function handleIncomingAttack(row, col) {
   applyAttackResult(state.playerGrid, row, col, result);
   if (socket) socket.emit('attackResult', { row, col, result });
   checkLoss();
-  // delay renderBoard so the gif has time to play first
   setTimeout(() => {
     renderBoard('player-board', state.playerGrid, true);
   }, GIF_DURATION.attacked + 200);
@@ -461,7 +459,7 @@ function showGameOver(iWon) {
   const overlay = document.getElementById('gameover-overlay');
   const title   = document.getElementById('gameover-title');
   const msg     = document.getElementById('gameover-msg');
-  title.textContent = iWon ? '🏆 VICTORY!'  : '💀 DEFEATED!';
+  title.textContent = iWon ? 'VICTORYYY YOU WIN'  : 'DEFEATED GG';
   msg.textContent   = iWon
     ? 'You defloated all the gators!'
     : 'Your gators got defloated...';
