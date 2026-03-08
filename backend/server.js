@@ -103,6 +103,14 @@ io.on('connection', (socket) => {
     }
   });
 
+socket.on('gameOver', ({ winner }) => {
+  const otherRole = winner === 'player1' ? 'player2' : 'player1';
+  const otherId = getId(otherRole);
+  if (otherId) io.to(otherId).emit('gameOver', { winner });
+  gameActive = false;
+  console.log(`Game over! ${winner} wins.`);
+});
+  
   socket.on('disconnect', () => {
     const role = players[socket.id];
     console.log(`Disconnected: ${socket.id} (${role})`);

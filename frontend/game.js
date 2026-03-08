@@ -12,6 +12,7 @@ const state = {
   playerGrid:      createGrid(),
   gameOver:        false,
   myTurn:          false,
+  myRole:          null,
   placementDone:   false,
   placedShips:     {},
   selectedShip:    0,
@@ -23,29 +24,38 @@ let socket = null;
 try {
   socket = io();
 
+  // Know which player we are
+  socket.on('assignRole', ({ role }) => {
+    state.myRole = role;
+    console.log('Assigned role:', role);
+  });
+
   socket.on('incomingAttack', ({ row, col }) => {
     handleIncomingAttack(row, col);
   });
 
   socket.on('attackResult', ({ row, col, result }) => {
-    applyAttackResult(state.enemyGrid, row, col, result);
-    renderBoard('enemy-board', state.enemyGrid, false);
-    updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
-                 result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
-  });
+  applyAttackResult(state.enemyGrid, row, col, result);
+  renderBoard('enemy-board', state.enemyGrid, false);
+  updateStatus(result === 'hit'  ? '💥 Hit! Go again!'  :
+               result === 'sunk' ? '☠️ Sunk! Go again!' : '🌊 Miss! Opponent\'s turn.');
+  checkWin(); 
+});
 
-  socket.on('yourTurn', () => {
-    state.myTurn = true;
-    updateStatus('Click a cell to defloat a SASEgator!');
-  });
+socket.on('yourTurn', () => {
+  if (state.gameOver) return;
+  state.myTurn = true;
+  updateStatus('Click a cell to defloat a SASEgator!');
+});
 
   socket.on('hardwareAttack', ({ row, col }) => {
     if (state.myTurn && !state.gameOver) fireAt(row, col);
   });
 
+  // winner is 'player1' or 'player2' — compare to our role
   socket.on('gameOver', ({ winner }) => {
     state.gameOver = true;
-    updateStatus(winner === 'player' ? '🎉 YOU WIN!' : '💀 You lose...');
+    updateStatus(winner === state.myRole ? '🎉 YOU WIN!' : '💀 You lose...');
   });
 
   socket.on('waitingForPlacement', () => {
@@ -99,6 +109,32 @@ function getPlacementCell(r, c) {
   return board ? board.querySelector(`[data-row="${r}"][data-col="${c}"]`) : null;
 }
 
+// ── Sprite helpers ────────────────────────────
+
+function buildSpriteMap() {
+  const map = {};
+  Object.entries(state.placedShips).forEach(([shipIndex, cells]) => {
+    cells.forEach((cell, posIndex) => {
+      map[`${cell.r}_${cell.c}`] = {
+        shipIndex: parseInt(shipIndex),
+        pos: posIndex,
+        total: cells.length
+      };
+    });
+  });
+  return map;
+}
+
+function getShipSprite(shipIndex, pos, total) {
+  if (total === 1) return 'assets/Sprites/1tube_idle.gif';
+  if (total === 2) return pos === 0 ? 'assets/Sprites/top2tube_idle.gif' : 'assets/Sprites/bottom2tube_idle.gif';
+  if (total === 3) {
+    if (pos === 0) return 'assets/Sprites/left3tube_gatorsprite_idle.gif';
+    if (pos === 1) return 'assets/Sprites/mid3tube_gatorsprite_idle.gif';
+    return 'assets/Sprites/right3tube_gatorsprite_idle.gif';
+  }
+}
+
 // ── Placement phase ───────────────────────────
 
 function initPlacement() {
@@ -137,13 +173,24 @@ function renderPlacementBoard() {
   const boardEl = document.getElementById('placement-board');
   if (!boardEl) return;
   boardEl.innerHTML = '';
+  const spriteMap = buildSpriteMap();
+
   for (let r = 0; r < GRID_ROWS; r++) {
     for (let c = 0; c < GRID_COLS; c++) {
       const cell = document.createElement('div');
       cell.classList.add('cell');
       cell.dataset.row = r;
       cell.dataset.col = c;
-      if (state.playerGrid[r][c] === 'ship') cell.classList.add('ship');
+
+      if (state.playerGrid[r][c] === 'ship') {
+        cell.classList.add('ship');
+        const sprite = spriteMap[`${r}_${c}`];
+        if (sprite) {
+          const src = getShipSprite(sprite.shipIndex, sprite.pos, sprite.total);
+          cell.innerHTML = `<img src="${src}" width="64" height="64">`;
+        }
+      }
+
       cell.addEventListener('click',      () => placementClick(r, c));
       cell.addEventListener('mouseenter', () => placementHover(r, c));
       cell.addEventListener('mouseleave', () => clearHover());
@@ -166,7 +213,6 @@ function placementHover(row, col) {
 }
 
 function placementClick(row, col) {
-  // after all 3 ships placed, any button press confirms
   if (state.awaitingConfirm) {
     readyUp();
     return;
@@ -174,7 +220,6 @@ function placementClick(row, col) {
 
   const ship = SHIPS[state.selectedShip];
   if (!ship) return;
-
   if (!canPlace(state.playerGrid, row, col, ship.size, true)) return;
 
   const cells = getPreviewCells(row, col, ship.size);
@@ -236,6 +281,7 @@ function fireAt(row, col) {
   const cell = state.enemyGrid[row][col];
   if (cell === 'hit' || cell === 'miss' || cell === 'sunk') return;
   if (!state.myTurn || state.gameOver) return;
+  state.myTurn = false; // ← lock immediately so they can't double-fire
   if (socket) {
     socket.emit('attack', { row, col });
   } else {
@@ -257,6 +303,20 @@ function resolveAttack(grid, row, col) {
 
 function applyAttackResult(grid, row, col, result) {
   grid[row][col] = (result === 'hit' || result === 'sunk') ? result : 'miss';
+
+  if (result === 'hit' || result === 'sunk') {
+    const boardId = (grid === state.playerGrid) ? 'player-board' : 'enemy-board';
+    const board = document.getElementById(boardId);
+    if (board) {
+      const cell = board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+      if (cell) {
+        cell.innerHTML = `<img src="assets/Sprites/top2tube_attacked.gif" width="64" height="64">`;
+        setTimeout(() => {
+          cell.innerHTML = `<img src="assets/Sprites/1tube_idle.gif" width="64" height="64">`;
+        }, 2000);
+      }
+    }
+  }
 }
 
 function handleIncomingAttack(row, col) {
@@ -268,8 +328,10 @@ function handleIncomingAttack(row, col) {
 }
 
 function checkWin() {
-  if (!state.enemyGrid.flat().includes('ship')) {
+  const hits = state.enemyGrid.flat().filter(v => v === 'hit').length;
+  if (hits >= 6) {
     state.gameOver = true;
+    socket.emit('gameOver', { winner: state.myRole });
     updateStatus('🎉 YOU WIN! All gators sunk!');
   }
 }
@@ -284,17 +346,34 @@ function checkLoss() {
 function renderBoard(boardId, grid, isPlayer) {
   const boardEl = document.getElementById(boardId);
   boardEl.innerHTML = '';
+  const spriteMap = isPlayer ? buildSpriteMap() : {};
+
   for (let r = 0; r < GRID_ROWS; r++) {
     for (let c = 0; c < GRID_COLS; c++) {
       const cell = document.createElement('div');
       cell.classList.add('cell');
       cell.dataset.row = r;
       cell.dataset.col = c;
+
       const val = grid[r][c];
-      if (val === 'hit')                   cell.classList.add('hit');
-      if (val === 'miss')                  cell.classList.add('miss');
-      if (val === 'sunk')                  cell.classList.add('sunk');
-      if (isPlayer && val === 'ship')      cell.classList.add('ship');
+
+      if (val === 'hit')  cell.classList.add('hit');
+      if (val === 'sunk') cell.classList.add('sunk');
+
+      if (val === 'miss') {
+        cell.classList.add('miss');
+        cell.innerHTML = `<img src="assets/Sprites/miss_animation.gif" width="64" height="64">`;
+      }
+
+      if (isPlayer && val === 'ship') {
+        cell.classList.add('ship');
+        const sprite = spriteMap[`${r}_${c}`];
+        if (sprite) {
+          const src = getShipSprite(sprite.shipIndex, sprite.pos, sprite.total);
+          cell.innerHTML = `<img src="${src}" width="64" height="64">`;
+        }
+      }
+
       if (!isPlayer) cell.addEventListener('click', () => fireAt(r, c));
       boardEl.appendChild(cell);
     }
@@ -304,7 +383,7 @@ function renderBoard(boardId, grid, isPlayer) {
 function updateStatus(msg) {
   const el = document.getElementById('status-msg');
   if (el) {
-    el.textContent    = msg;
+    el.textContent     = msg;
     el.style.transform = 'scale(1.1)';
     setTimeout(() => { el.style.transform = 'scale(1)'; }, 200);
   }
