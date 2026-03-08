@@ -2,3 +2,1362 @@
 
 
 2026-03-08 05:06:19,026 [INFO] Activator:171 - !SESSION log4j initialized
+2026-03-08 05:06:24,828 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:24,832 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:24,862 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:24,863 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:24,887 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:24,889 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:26,395 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2026-03-08 05:06:27,246 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557
+2026-03-08 05:06:27,271 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/mcu/
+2026-03-08 05:06:27,279 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/boardmanager/
+2026-03-08 05:06:27,280 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,280 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,283 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,302 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,307 [INFO] DbMcusJson:63 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,307 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,312 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,312 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/cs/
+2026-03-08 05:06:27,312 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,517 [INFO] RulesReader:52 - Compatibility file has been processed (228 Rules)
+2026-03-08 05:06:27,714 [INFO] MicroXplorer:565 - Detected Java Version = 1.8.0_272
+2026-03-08 05:06:27,714 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/mcu/
+2026-03-08 05:06:27,725 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/boardmanager/
+2026-03-08 05:06:27,725 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,725 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,725 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:27,725 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,725 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,725 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,725 [INFO] DbMcusJson:63 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,725 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,725 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,725 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,725 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,725 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,730 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,730 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/cs/
+2026-03-08 05:06:27,730 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:27,730 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:27,866 [INFO] MainPanel:190 - HeapMemory: 268435456
+2026-03-08 05:06:28,039 [INFO] DbMcusXml:71 - Set database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/mcu/
+2026-03-08 05:06:28,040 [INFO] DbBoardsPdsc:57 - Set plugin database path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/boardmanager/
+2026-03-08 05:06:28,040 [INFO] DbMcus:259 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:28,040 [INFO] DbBoards:265 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:28,040 [INFO] DbExamples:329 - Set plugin images path to: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/
+2026-03-08 05:06:28,042 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,042 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:28,042 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,043 [INFO] DbMcusJson:63 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:28,043 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,043 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:28,043 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,044 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:28,044 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,044 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,044 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/cs/
+2026-03-08 05:06:28,045 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\jchau\.stmcufinder\plugins\mcufinder/ => C:\Users\jchau\.stmcufinder\plugins\mcufinder
+2026-03-08 05:06:28,045 [INFO] DbExamplesSqlite:699 - Set database path to: C:\Users\jchau\.stmcufinder\plugins\mcufinder//mcu/
+2026-03-08 05:06:28,079 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557
+2026-03-08 05:06:28,079 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2026-03-08 05:06:28,079 [INFO] PluginManage:292 - Check plugin analytics
+2026-03-08 05:06:28,410 [INFO] AnalyticsPlugin:225 - Accepted Software Licenses: 
+2026-03-08 05:06:28,411 [INFO] AnalyticsPlugin:227 - Accepted CMSIS Pack Licenses: 
+2026-03-08 05:06:28,412 [INFO] AnalyticsPlugin:229 - Accepted Firmware Licenses: 
+2026-03-08 05:06:28,412 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2026-03-08 05:06:28,413 [INFO] PluginManage:292 - Check plugin clock
+2026-03-08 05:06:28,439 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:28,440 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:28,445 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2026-03-08 05:06:28,446 [INFO] PluginManage:292 - Check plugin ddr
+2026-03-08 05:06:28,451 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2026-03-08 05:06:28,452 [INFO] PluginManage:292 - Check plugin filemanager
+2026-03-08 05:06:28,461 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:28,462 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:28,484 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:06:28,484 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:06:28,714 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2026-03-08 05:06:28,716 [INFO] PluginManage:292 - Check plugin ipmanager
+2026-03-08 05:06:28,734 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2026-03-08 05:06:28,734 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2026-03-08 05:06:28,764 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2026-03-08 05:06:28,764 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2026-03-08 05:06:28,810 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2026-03-08 05:06:28,810 [INFO] PluginManage:292 - Check plugin power
+2026-03-08 05:06:28,826 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2026-03-08 05:06:28,826 [INFO] PluginManage:292 - Check plugin projectmanager
+2026-03-08 05:06:28,860 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2026-03-08 05:06:28,860 [INFO] PluginManage:292 - Check plugin thirdparty
+2026-03-08 05:06:29,121 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2026-03-08 05:06:29,122 [INFO] PluginManage:292 - Check plugin tools
+2026-03-08 05:06:29,122 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2026-03-08 05:06:29,124 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2026-03-08 05:06:29,125 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2026-03-08 05:06:29,128 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2026-03-08 05:06:29,128 [INFO] PluginManage:292 - Check plugin tutovideos
+2026-03-08 05:06:29,656 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2026-03-08 05:06:29,657 [INFO] PluginManage:292 - Check plugin updater
+2026-03-08 05:06:29,686 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2026-03-08 05:06:29,687 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2026-03-08 05:06:30,034 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2026-03-08 05:06:30,213 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,213 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2026-03-08 05:06:30,219 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,220 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2026-03-08 05:06:30,225 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,225 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2026-03-08 05:06:30,228 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,229 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2026-03-08 05:06:30,234 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,234 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2026-03-08 05:06:30,239 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,239 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2026-03-08 05:06:30,250 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,252 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2026-03-08 05:06:30,256 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,256 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2026-03-08 05:06:30,265 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,265 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2026-03-08 05:06:30,277 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,277 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2026-03-08 05:06:30,285 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,285 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2026-03-08 05:06:30,291 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,291 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2026-03-08 05:06:30,297 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,297 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2026-03-08 05:06:30,313 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,313 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2026-03-08 05:06:30,313 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,313 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2026-03-08 05:06:30,323 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,323 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2026-03-08 05:06:30,331 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,332 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2026-03-08 05:06:30,337 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,338 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2026-03-08 05:06:30,344 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,345 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2026-03-08 05:06:30,346 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,346 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2026-03-08 05:06:30,346 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,346 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2026-03-08 05:06:30,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,361 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2026-03-08 05:06:30,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,361 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2026-03-08 05:06:30,361 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,377 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2026-03-08 05:06:30,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,383 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2026-03-08 05:06:30,383 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,383 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2026-03-08 05:06:30,393 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,393 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2026-03-08 05:06:30,409 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,409 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2026-03-08 05:06:30,409 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,409 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2026-03-08 05:06:30,427 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,428 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2026-03-08 05:06:30,433 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,434 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2026-03-08 05:06:30,443 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,443 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2026-03-08 05:06:30,446 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,447 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2026-03-08 05:06:30,452 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,452 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2026-03-08 05:06:30,457 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,457 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2026-03-08 05:06:30,461 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,461 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2026-03-08 05:06:30,465 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,465 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2026-03-08 05:06:30,469 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,469 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2026-03-08 05:06:30,475 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:06:30,475 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2026-03-08 05:06:31,032 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:31,246 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:31,326 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2026-03-08 05:06:31,328 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:31,328 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2026-03-08 05:06:31,485 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:31,485 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2026-03-08 05:06:32,128 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2026-03-08 05:06:35,128 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:35,128 [ERROR] AbstractThirdPartyUpdaterManager:153 - java.lang.Integer cannot be cast to java.util.List
+2026-03-08 05:06:35,128 [INFO] ThirdParty:887 - Integrity check success = false
+2026-03-08 05:06:35,130 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2026-03-08 05:06:35,130 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2026-03-08 05:06:35,130 [INFO] ThirdParty:785 - entering critical section [close project]
+2026-03-08 05:06:35,133 [INFO] ThirdParty:796 - exiting critical section [close project]
+2026-03-08 05:06:35,134 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2026-03-08 05:06:35,134 [FATAL] Updater:284 - Updater called before beeing initialized
+2026-03-08 05:06:35,153 [ERROR] Updater:1065 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2026-03-08 05:06:35,158 [INFO] Updater:1002 - Updater Version found : 6.1.0
+2026-03-08 05:06:35,202 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557
+2026-03-08 05:06:35,697 [INFO] MainUpdater:2644 - connection check result : 10
+2026-03-08 05:06:35,697 [INFO] MainUpdater:249 - Updater Check For Update Now.
+2026-03-08 05:06:35,697 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2026-03-08 05:06:35,807 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2026-03-08 05:06:35,838 [INFO] MainUpdater:2644 - connection check result : 10
+2026-03-08 05:06:36,861 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\jchau\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2026-03-08 05:06:36,861 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2026-03-08 05:06:36,877 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2026-03-08 05:06:36,877 [INFO] DbMcusXml:97 - Load MCU database from C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/mcu/families.xml
+2026-03-08 05:06:37,892 [INFO] DbMcusJson:92 - JSON generation date=Tue Nov 16 11:17:54 EST 2021 (1637079474)
+2026-03-08 05:06:40,399 [INFO] DbMcus:176 - Found 1835 MCUs (1796 are supported by CubeMX, 1920 are visible in CubeMX)
+2026-03-08 05:06:40,408 [INFO] ApiDb:238 - Load user favorites file C:\Users\jchau/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2026-03-08 05:06:40,408 [INFO] ApiDb:242 - User favorites MCUs=[]
+2026-03-08 05:06:40,408 [INFO] DbMcus:188 - Set 0 / 0 favorites MCUs
+2026-03-08 05:06:41,747 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2026-03-08 05:06:42,927 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2026-03-08 05:06:43,135 [INFO] DbBoardsPdsc:91 - Found 24 items
+2026-03-08 05:06:43,141 [INFO] DbBoardsPdsc:91 - Found 9 items
+2026-03-08 05:06:43,151 [INFO] DbBoardsPdsc:91 - Found 32 items
+2026-03-08 05:06:43,156 [INFO] DbBoardsPdsc:91 - Found 1 items
+2026-03-08 05:06:43,198 [INFO] DbBoardsPdsc:91 - Found 45 items
+2026-03-08 05:06:43,214 [INFO] DbBoardsPdsc:91 - Found 41 items
+2026-03-08 05:06:43,214 [INFO] DbBoardsPdsc:91 - Found 2 items
+2026-03-08 05:06:43,235 [INFO] DbBoardsPdsc:91 - Found 4 items
+2026-03-08 05:06:43,252 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2026-03-08 05:06:43,253 [WARN] DbBoardsPdsc:255 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2026-03-08 05:06:43,300 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2026-03-08 05:06:43,300 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2026-03-08 05:06:43,300 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2026-03-08 05:06:43,406 [INFO] DbBoardsJson:85 - JSON generation date=Tue Nov 16 11:17:54 EST 2021 (1637079474)
+2026-03-08 05:06:43,437 [INFO] DbBoards:118 - Found 168 boards (155 are supported by CubeMX)
+2026-03-08 05:06:43,444 [INFO] DbBoardsDocs:145 - JSON generation date=Tue Nov 16 11:17:54 EST 2021 (1637079474)
+2026-03-08 05:06:43,448 [INFO] DbBoardsDocs:81 - Found 209 boards documents
+2026-03-08 05:06:43,448 [WARN] DbBoards:128 - board B-L475E-IOT01A2 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board NUCLEO-H743ZI has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board NUCLEO-WL55JC1 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board NUCLEO-WL55JC2 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-BFA001V1B has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-BFA001V2B has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-IDP005V1 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-IDP005V2 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-MKSBOX1V1 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-STWINKT1 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STEVAL-STWINKT1B has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STM32439I-EVAL2 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STM32F401C-DISCO has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STM32F769I-DISC1 has no document id list !
+2026-03-08 05:06:43,464 [WARN] DbBoards:128 - board STM32G474E-EVAL1 has no document id list !
+2026-03-08 05:06:43,480 [WARN] DbBoards:128 - board STM32H743I-EVAL2 has no document id list !
+2026-03-08 05:06:43,482 [WARN] DbBoards:128 - board STM32H747I-DISC1 has no document id list !
+2026-03-08 05:06:43,483 [WARN] DbBoards:128 - board STM32H753I-EVAL2 has no document id list !
+2026-03-08 05:06:43,485 [WARN] DbBoards:128 - board STM32L-DISCOVERY has no document id list !
+2026-03-08 05:06:44,072 [ERROR] DbBoards:190 - Image file not found for board B-U585I-IOT02A: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/B-U585I-IOT02A_small.jpg
+2026-03-08 05:06:44,328 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-F413ZH: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo-f413zh_small.jpg
+2026-03-08 05:06:44,802 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-L552ZE-Q: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo_l552ze_q_small.jpg
+2026-03-08 05:06:44,802 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-U575ZI-Q: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo-u575zi-q_small.jpg
+2026-03-08 05:06:44,802 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-WB15CC: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo-wb15cc_small.jpg
+2026-03-08 05:06:44,802 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-WB55RG: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo-wb55rg_small.jpg
+2026-03-08 05:06:44,802 [ERROR] DbBoards:190 - Image file not found for board NUCLEO-WL55JC: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/nucleo-wl55jc-small.jpg
+2026-03-08 05:06:45,489 [ERROR] DbBoards:190 - Image file not found for board STEVAL-STWINKT1B: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/steval-stwinkt1b_small.jpg
+2026-03-08 05:06:46,851 [ERROR] DbBoards:190 - Image file not found for board STM32H7B3I-EVAL: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/stm32h7b3ieval_small.jpg
+2026-03-08 05:06:47,454 [ERROR] DbBoards:190 - Image file not found for board STM32U575I-EV: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/stm32u575i-ev_small.jpg
+2026-03-08 05:06:47,558 [ERROR] DbBoards:190 - Image file not found for board STM32WB5MM-DK: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\/plugins/mcufinder/images/boards/STM32WB5MM-DK_small.jpg
+2026-03-08 05:06:47,558 [INFO] ApiDb:238 - Load user favorites file C:\Users\jchau/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2026-03-08 05:06:47,558 [INFO] ApiDb:242 - User favorites Boards=[NUCLEO-F439ZI]
+2026-03-08 05:06:47,558 [INFO] DbBoards:207 - Set 1 / 1 favorites Boards
+2026-03-08 05:06:54,079 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2026-03-08 05:06:54,180 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2026-03-08 05:06:54,224 [INFO] BoardFilterPanel:214 - Update 1 favorites Boards
+2026-03-08 05:07:38,925 [INFO] MainUpdater:2644 - connection check result : 10
+2026-03-08 05:07:38,925 [INFO] MainUpdater:2644 - connection check result : 10
+2026-03-08 05:07:39,170 [INFO] MicroXplorer:385 - Change Database Path : 
+2026-03-08 05:07:39,170 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2026-03-08 05:07:39,170 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2026-03-08 05:07:39,170 [INFO] ThirdParty:785 - entering critical section [close project]
+2026-03-08 05:07:39,170 [INFO] ThirdParty:796 - exiting critical section [close project]
+2026-03-08 05:07:39,175 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2026-03-08 05:07:39,181 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 530575072 Bytes (608174080)
+2026-03-08 05:07:39,185 [INFO] OpenFileManager:274 - Change cursor
+2026-03-08 05:07:39,188 [WARN] ThirdParty:204 - Use empty third party IP manager
+2026-03-08 05:07:39,214 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2026-03-08 05:07:39,214 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2026-03-08 05:07:39,483 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,533 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\WES.I-CUBE-Cesium.1.4.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,533 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.FP-SNS-MOTENVWB1.1.5.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,547 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\emotas.I-CUBE-CANOPEN.1.3.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,560 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2026-03-08 05:07:39,560 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2026-03-08 05:07:39,563 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2026-03-08 05:07:39,563 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2026-03-08 05:07:39,581 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2026-03-08 05:07:39,669 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\Avnet-IOTCONNECT.X-CUBE-iotc-st67-sdk.1.0.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,682 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.8.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,697 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-FREERTOS.1.4.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,715 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\Cesanta.I-CUBE-Mongoose.7.20.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,770 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\EmbeddedOffice.I-CUBE-FS-RTOS.1.0.1.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,792 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\RealThread.X-CUBE-RT-Thread_Nano.4.1.1.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,792 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-FREERTOS.1.5.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:39,810 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\ITTIA_DB.I-CUBE-ITTIADB.8.9.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:40,318 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2026-03-08 05:07:40,324 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2026-03-08 05:07:40,324 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2026-03-08 05:07:40,327 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2026-03-08 05:07:40,337 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\STMicroelectronics.X-CUBE-ST67W61.1.2.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:40,340 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,355 [WARN] ConditionMgr:437 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,386 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,388 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,390 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,392 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,392 [WARN] ConditionMgr:1040 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2026-03-08 05:07:40,400 [ERROR] Engine:500 - C:\Users\jchau\.stm32cubemx\thirdparties\pdsc\quantropi.X-CUBE-qispace-sdk-base.2.1.0.pdsc: PDSC version is not supported
+2026-03-08 05:07:40,528 [INFO] ThirdParty:887 - Integrity check success = true
+2026-03-08 05:07:40,528 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2026-03-08 05:07:40,528 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance for project manager is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance for context M0+ is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_NS instance for context M4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance value for IP GTZC is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance for mcu is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance for VP is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule GTZC_S instance for signal is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule OPAMP is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule USB device lib V2.5.3 for L0 rename USBD_SUPPORT_USER_STRING parameter to USBD_SUPPORT_USER_STRING_DESC4 is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule I2SCLockSelection clock entry align is applicable
+2026-03-08 05:07:46,340 [INFO] Rule:212 - rule Assign TIMx context if used as SYS timebase is applicable
+2026-03-08 05:07:46,340 [INFO] DbConfProperties:294 - Apply Compatibility (0/20 Rules)
+2026-03-08 05:07:46,372 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2026-03-08 05:07:46,568 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,570 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,572 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,574 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Board Extension:SAFEA1' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Board Extension:ESE01A1' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Board Part:STSAFEA110' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Board Part:STSAFEA120' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Security:STM32_Cryptographic' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,594 [WARN] ApiManager:294 - Cannot register API 'Security:STSELib' from pack STMicroelectronics.X-CUBE-STSE01.1.0.0: no header file found
+2026-03-08 05:07:46,599 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC06A1' from pack STMicroelectronics.X-CUBE-NFC6.3.2.0: no header file found
+2026-03-08 05:07:46,599 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC08A1' from pack STMicroelectronics.X-CUBE-NFC6.3.2.0: no header file found
+2026-03-08 05:07:46,599 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC06A1' from pack STMicroelectronics.X-CUBE-NFC6.3.1.0: no header file found
+2026-03-08 05:07:46,599 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC08A1' from pack STMicroelectronics.X-CUBE-NFC6.3.1.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Extension:SAFEA1' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Extension:ESE01A1' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Extension:ESE02A1' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Part:STSAFEA110' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Part:STSAFEA120' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Board Part:STSAFEL010' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Security:STM32_Cryptographic' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,617 [WARN] ApiManager:294 - Cannot register API 'Security:STSELib' from pack STMicroelectronics.X-CUBE-STSE01.2.0.0: no header file found
+2026-03-08 05:07:46,624 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-03-08 05:07:46,626 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-03-08 05:07:46,626 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-03-08 05:07:46,626 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-03-08 05:07:46,626 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-03-08 05:07:46,640 [WARN] ApiManager:294 - Cannot register API 'Wireless:STM32WB05N' from pack STMicroelectronics.X-CUBE-WB05N.2.0.0: no header file found
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC12outputFreq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (ADC34outputFreq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C1Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C2Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (I2C3Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCO2PinFreq_Value) has invalid value (168000000)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (MCOFreq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMCOFreq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PLLMUL)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (PRESCALERUSB)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (SYSCLKSourceVirtual)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM15Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM16Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM17Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM1Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM20Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM3Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM8Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART4Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (UART5Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART1Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART2Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USART3Freq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (USBFreq_Value)
+2026-03-08 05:07:47,015 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (VCOOutput2Freq_Value)
+2026-03-08 05:07:48,063 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 628734792 Bytes (835715072)
+2026-03-08 05:07:48,082 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2026-03-08 05:07:48,082 [INFO] ThirdParty:751 - entering critical section [change project]
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfTPM 3.8.0
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.5.0
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSH 1.4.20
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2026-03-08 05:07:48,082 [INFO] ThirdParty:939 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.2
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.8.4
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-STSE01 1.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.26.1
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.2.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-STSE01 2.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-03-08 05:07:48,084 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.2.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-WB05N 2.0.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-03-08 05:07:48,086 [INFO] ThirdParty:757 - exiting critical section [change project]
+2026-03-08 05:07:48,713 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2026-03-08 05:07:48,713 [INFO] PinOutPanel:1434 - setPackage(STM32F439ZITx,LQFP144)
+2026-03-08 05:07:49,500 [INFO] UtilMem:74 - Before build in PCC Used Memory: 640498216 Bytes (835715072)
+2026-03-08 05:07:50,324 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/jchau/.stm32cubemx/plugins/power
+2026-03-08 05:07:50,425 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/jchau/.stm32cubemx/plugins/power
+2026-03-08 05:07:50,499 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/jchau/.stm32cubemx/plugins/power
+2026-03-08 05:07:50,549 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/jchau/.stm32cubemx/plugins/power
+2026-03-08 05:07:50,930 [INFO] UtilMem:74 - After build in PCC Used Memory: 628191808 Bytes (835715072)
+2026-03-08 05:07:50,983 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,987 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,989 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,992 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,994 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,994 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,994 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,994 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,996 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,996 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:50,998 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,002 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,005 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,005 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,007 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,007 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,009 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,009 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,011 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,011 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,011 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,011 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,013 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,013 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,013 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,014 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,014 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,014 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,016 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,016 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,018 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,018 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,020 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,020 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,020 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,020 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,022 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,022 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,022 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,024 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,024 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,026 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,026 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,026 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,028 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,028 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2026-03-08 05:07:51,217 [INFO] ApiDbMcu:456 - Load IP Config File for PDM2PCM
+2026-03-08 05:07:51,280 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2026-03-08 05:07:51,453 [INFO] OpenFileManager:294 - Restore cursor
+2026-03-08 05:07:52,059 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 680761176 Bytes (835715072)
+2026-03-08 05:07:52,166 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:07:52,167 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:07:52,178 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 693870416 Bytes (835715072)
+2026-03-08 05:07:52,186 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:07:52,187 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:07:52,207 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:07:52,207 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:07:53,044 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2026-03-08 05:07:53,044 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2026-03-08 05:07:53,044 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2026-03-08 05:07:53,044 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2026-03-08 05:07:53,044 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2026-03-08 05:07:53,046 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2026-03-08 05:07:53,046 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ETH
+2026-03-08 05:07:53,048 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\
+2026-03-08 05:07:54,313 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp_save
+2026-03-08 05:07:55,173 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp
+2026-03-08 05:07:55,500 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp_save
+2026-03-08 05:07:55,757 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp
+2026-03-08 05:07:56,292 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:07:56,296 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:07:56,302 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:07:56,345 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c_save
+2026-03-08 05:07:56,648 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c
+2026-03-08 05:07:56,728 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h_save
+2026-03-08 05:07:56,854 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h
+2026-03-08 05:07:56,877 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c_save
+2026-03-08 05:07:57,125 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c
+2026-03-08 05:07:57,131 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp_save
+2026-03-08 05:07:57,213 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp
+2026-03-08 05:07:57,231 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-03-08 05:07:57,397 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h
+2026-03-08 05:07:57,457 [WARN] IPConfigManager:2967 - IP not found : USB_OTG
+2026-03-08 05:07:57,457 [WARN] CodeGenerator:3177 - IP not found : null
+2026-03-08 05:07:57,486 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h_save
+2026-03-08 05:07:57,664 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h
+2026-03-08 05:07:57,672 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c_save
+2026-03-08 05:07:57,929 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c
+2026-03-08 05:07:58,872 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 246mS.
+2026-03-08 05:07:58,888 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.0-B13
+2026-03-08 05:07:59,520 [INFO] ConfigFileManager:1238 - The Die is : DIE419
+2026-03-08 05:07:59,540 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2026-03-08 05:07:59,552 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2026-03-08 05:07:59,558 [INFO] ApiDbMcu:456 - Load IP Config File for LIBJPEG
+2026-03-08 05:07:59,572 [INFO] ApiDbMcu:456 - Load IP Config File for LWIP
+2026-03-08 05:07:59,584 [INFO] ApiDbMcu:456 - Load IP Config File for MBEDTLS
+2026-03-08 05:07:59,591 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2026-03-08 05:07:59,607 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2026-03-08 05:08:09,594 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 10706mS.
+2026-03-08 05:08:09,594 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 05:08:09,594 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 05:08:10,749 [INFO] ApiDb:263 - Save user favorites file C:\Users\jchau/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2026-03-08 05:08:10,749 [INFO] ApiDb:267 - User favorites MCUs=[]
+2026-03-08 05:08:10,749 [INFO] ApiDb:263 - Save user favorites file C:\Users\jchau/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2026-03-08 05:08:10,758 [INFO] ApiDb:267 - User favorites Boards=[NUCLEO-F439ZI]
+2026-03-08 05:08:12,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,746 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:08:12,760 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,760 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:08:12,783 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,783 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:08:12,870 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,870 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:08:12,891 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,891 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:08:12,902 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:08:12,902 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:09:30,113 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x464,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-03-08 05:12:49,931 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 934771680 Bytes (1073741824)
+2026-03-08 05:12:50,049 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:50,049 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:50,078 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:50,078 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:50,096 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:50,096 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:51,961 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 949715944 Bytes (1073741824)
+2026-03-08 05:12:52,066 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:52,066 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:52,089 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:52,089 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:52,118 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:52,118 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:57,443 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 968051984 Bytes (1073741824)
+2026-03-08 05:12:57,617 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:57,618 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:57,624 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:57,624 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:12:57,659 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:12:57,659 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:13:00,566 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_DEVICE
+2026-03-08 05:13:00,566 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2026-03-08 05:13:00,566 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2026-03-08 05:13:00,567 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2026-03-08 05:13:00,567 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2026-03-08 05:13:00,567 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2026-03-08 05:13:00,568 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2026-03-08 05:13:00,568 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ETH
+2026-03-08 05:13:00,571 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\
+2026-03-08 05:13:01,464 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp_save
+2026-03-08 05:13:01,567 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp
+2026-03-08 05:13:01,612 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp_save
+2026-03-08 05:13:01,714 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp
+2026-03-08 05:13:01,725 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2026-03-08 05:13:01,834 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2026-03-08 05:13:01,935 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp
+2026-03-08 05:13:01,955 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2026-03-08 05:13:02,049 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp
+2026-03-08 05:13:02,097 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2026-03-08 05:13:02,228 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2026-03-08 05:13:02,257 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2026-03-08 05:13:02,386 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp
+2026-03-08 05:13:02,610 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:13:02,610 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:13:02,610 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:13:02,644 [INFO] Middleware:1252 - No code input for Bsp Dependency
+2026-03-08 05:13:02,684 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c_save
+2026-03-08 05:13:02,822 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c
+2026-03-08 05:13:02,848 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h_save
+2026-03-08 05:13:02,980 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h
+2026-03-08 05:13:03,004 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h_save
+2026-03-08 05:13:03,147 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h
+2026-03-08 05:13:03,175 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c_save
+2026-03-08 05:13:03,311 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c
+2026-03-08 05:13:03,343 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h_save
+2026-03-08 05:13:03,472 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h
+2026-03-08 05:13:03,502 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c_save
+2026-03-08 05:13:03,647 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c
+2026-03-08 05:13:03,675 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h_save
+2026-03-08 05:13:03,786 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h
+2026-03-08 05:13:03,812 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c_save
+2026-03-08 05:13:03,950 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c
+2026-03-08 05:13:03,992 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c_save
+2026-03-08 05:13:04,170 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c
+2026-03-08 05:13:04,182 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h_save
+2026-03-08 05:13:04,323 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h
+2026-03-08 05:13:04,409 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c_save
+2026-03-08 05:13:04,620 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c
+2026-03-08 05:13:04,628 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp_save
+2026-03-08 05:13:04,719 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp
+2026-03-08 05:13:04,760 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-03-08 05:13:04,918 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h
+2026-03-08 05:13:05,014 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h_save
+2026-03-08 05:13:05,160 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h
+2026-03-08 05:13:05,191 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c_save
+2026-03-08 05:13:05,395 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c
+2026-03-08 05:13:06,676 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 581mS.
+2026-03-08 05:13:06,692 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.0-B13
+2026-03-08 05:13:07,257 [INFO] ConfigFileManager:1238 - The Die is : DIE419
+2026-03-08 05:13:12,830 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 6138mS.
+2026-03-08 05:13:12,832 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 2mS.
+2026-03-08 05:13:12,843 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 05:13:56,632 [INFO] Gpio:248 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2026-03-08 05:14:09,688 [INFO] Gpio:248 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2026-03-08 05:14:09,717 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,46,604x1074,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-03-08 05:14:09,789 [INFO] Gpio:248 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2026-03-08 05:14:18,009 [INFO] Gpio:248 - dependency for GPIO [ETH, RCC, SYS, USART3, USB_OTG_FS]
+2026-03-08 05:22:51,110 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 786022608 Bytes (1073741824)
+2026-03-08 05:22:51,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:51,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:51,281 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:51,281 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:51,312 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:51,312 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:52,796 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 746025904 Bytes (1073741824)
+2026-03-08 05:22:55,911 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 846953400 Bytes (1073741824)
+2026-03-08 05:22:56,016 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:56,016 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:56,035 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:56,035 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:56,065 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:22:56,065 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:22:56,192 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_DEVICE
+2026-03-08 05:22:56,193 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2026-03-08 05:22:56,193 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2026-03-08 05:22:56,193 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2026-03-08 05:22:56,193 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2026-03-08 05:22:56,193 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2026-03-08 05:22:56,194 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2026-03-08 05:22:56,194 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ETH
+2026-03-08 05:22:56,196 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\
+2026-03-08 05:22:56,967 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp_save
+2026-03-08 05:22:57,055 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp
+2026-03-08 05:22:57,113 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp_save
+2026-03-08 05:22:57,225 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp
+2026-03-08 05:22:57,230 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2026-03-08 05:22:57,485 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2026-03-08 05:22:57,574 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp
+2026-03-08 05:22:57,581 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2026-03-08 05:22:57,653 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp
+2026-03-08 05:22:57,660 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2026-03-08 05:22:57,776 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2026-03-08 05:22:57,782 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2026-03-08 05:22:57,891 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp
+2026-03-08 05:22:58,097 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:22:58,097 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:22:58,109 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 05:22:58,129 [INFO] Middleware:1252 - No code input for Bsp Dependency
+2026-03-08 05:22:58,176 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c_save
+2026-03-08 05:22:58,291 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c
+2026-03-08 05:22:58,301 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h_save
+2026-03-08 05:22:58,390 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h
+2026-03-08 05:22:58,395 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h_save
+2026-03-08 05:22:58,533 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h
+2026-03-08 05:22:58,549 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c_save
+2026-03-08 05:22:58,719 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c
+2026-03-08 05:22:58,730 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h_save
+2026-03-08 05:22:58,820 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h
+2026-03-08 05:22:58,844 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c_save
+2026-03-08 05:22:59,018 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c
+2026-03-08 05:22:59,035 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h_save
+2026-03-08 05:22:59,114 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h
+2026-03-08 05:22:59,153 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c_save
+2026-03-08 05:22:59,309 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c
+2026-03-08 05:22:59,341 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c_save
+2026-03-08 05:22:59,453 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c
+2026-03-08 05:22:59,485 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h_save
+2026-03-08 05:22:59,564 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h
+2026-03-08 05:22:59,602 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c_save
+2026-03-08 05:22:59,732 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c
+2026-03-08 05:22:59,732 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp_save
+2026-03-08 05:22:59,811 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp
+2026-03-08 05:22:59,844 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-03-08 05:22:59,994 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h
+2026-03-08 05:23:00,100 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h_save
+2026-03-08 05:23:00,223 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h
+2026-03-08 05:23:00,256 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c_save
+2026-03-08 05:23:00,469 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c
+2026-03-08 05:23:01,636 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 275mS.
+2026-03-08 05:23:01,651 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.0-B13
+2026-03-08 05:23:02,215 [INFO] ConfigFileManager:1238 - The Die is : DIE419
+2026-03-08 05:23:04,420 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2769mS.
+2026-03-08 05:23:04,422 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 2mS.
+2026-03-08 05:23:04,426 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 05:40:03,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:40:03,939 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:40:03,988 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:40:03,988 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:40:04,005 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:40:04,007 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:08,592 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:08,592 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:08,598 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:08,608 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:08,648 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:08,648 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:12,070 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:12,070 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:12,091 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:12,092 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:12,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:12,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:24,503 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:24,505 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:24,532 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:24,532 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:24,560 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:24,560 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:39,438 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:39,438 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:39,454 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:39,454 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:41:39,470 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:41:39,470 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,001 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,001 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,024 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,040 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,040 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,648 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,648 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,730 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:13,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:13,777 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:26,841 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:26,841 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:26,860 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:26,860 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:26,878 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:26,878 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:47,298 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:47,298 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:47,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:47,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:47,530 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:47,532 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:47,922 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:48,038 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:48,048 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:48,048 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:42:48,068 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:42:48,068 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:37,738 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:37,738 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:37,758 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:37,758 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:37,778 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:37,778 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:38,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:38,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:38,858 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:38,858 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:53:38,868 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:53:38,868 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:38,578 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:38,580 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:38,610 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:38,610 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:38,671 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:38,672 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:39,348 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:39,348 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:39,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:39,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 05:54:39,412 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 05:54:39,412 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:28,637 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:28,638 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:28,655 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:28,656 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:28,672 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:28,673 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:29,193 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:29,194 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:29,208 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:29,208 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:11:29,238 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:11:29,240 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:48,954 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:48,956 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:48,976 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:48,976 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:48,994 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:48,994 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:50,391 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:50,391 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:50,410 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:50,412 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:13:50,434 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:13:50,438 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:06,388 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:06,388 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:06,398 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:06,398 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:06,418 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:06,418 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:07,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:07,847 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:07,858 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:07,864 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:25:07,878 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:25:07,878 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:30,724 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:30,724 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:30,742 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:30,742 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:30,760 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:30,760 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:32,054 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:32,054 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:32,068 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:32,068 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:26:32,078 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:26:32,078 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:46,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:46,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:46,853 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:46,853 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:46,878 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:46,882 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:48,278 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:48,278 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:48,299 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:48,299 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:29:48,315 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:29:48,318 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:54,080 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:54,082 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:54,098 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:54,098 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:54,223 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:54,228 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:55,341 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:55,343 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:55,358 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:55,358 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:34:55,373 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:34:55,373 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:27,306 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:27,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:27,324 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:27,324 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:27,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:27,340 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:28,691 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:28,692 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:28,707 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:28,707 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:36:28,718 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:36:28,718 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:08,236 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:08,236 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:08,255 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:08,255 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:08,272 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:08,272 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:09,276 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:09,278 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:09,292 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:09,292 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:37:09,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:37:09,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:09,212 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:09,213 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:09,228 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:09,228 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:09,238 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:09,238 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:10,768 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:10,768 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:10,798 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:10,798 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:51:10,809 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:51:10,809 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:12,953 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:12,953 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:12,994 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:12,994 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:13,018 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:13,018 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:13,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:13,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:13,868 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:13,868 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:56:13,888 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:56:13,888 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:53,724 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:53,724 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:53,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:53,938 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:53,993 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:53,993 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:54,778 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:54,782 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:54,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:54,795 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 06:59:54,808 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 06:59:54,808 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:33,045 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:33,047 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:33,058 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:33,058 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:33,072 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:33,077 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:34,807 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:34,807 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:34,818 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:34,818 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:02:34,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:02:34,838 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:30,409 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:30,411 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:30,429 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:30,429 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:30,458 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:30,458 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:32,101 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:32,101 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:32,108 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:32,119 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:13:32,128 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:13:32,128 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:32,952 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:32,959 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:32,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:32,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:32,996 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:32,996 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:34,710 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:34,710 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:34,731 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:34,731 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:14:34,742 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:14:34,742 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:51,171 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:51,177 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:51,287 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:51,293 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:51,352 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:51,363 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:53,319 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:53,319 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:53,354 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:53,354 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:15:53,411 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:15:53,411 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:16,916 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:16,918 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:16,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:16,932 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:16,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:16,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:18,254 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:18,254 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:18,273 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:18,273 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:16:18,320 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:16:18,328 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:19:44,684 [INFO] DbMcusDocs:145 - JSON generation date=Tue Nov 16 11:17:54 EST 2021 (1637079474)
+2026-03-08 07:19:44,948 [INFO] DbMcusDocs:81 - Found 682 MCUs documents
+2026-03-08 07:19:52,694 [INFO] DmaTabbedPanel:192 - Cannot restore the selected Tab for DMA
+2026-03-08 07:22:47,489 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:47,489 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:22:47,505 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:47,505 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:22:47,521 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:47,521 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:22:50,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:50,979 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:22:51,006 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:51,006 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:22:51,021 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:22:51,021 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:01,904 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:01,904 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:01,959 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:01,959 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:01,974 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:01,974 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:02,729 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:02,729 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:02,747 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:02,747 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:02,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:02,761 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:41,809 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:41,814 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:41,830 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:41,830 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:41,849 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:41,854 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:54,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:54,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:54,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:54,899 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:35:54,914 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:35:54,914 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:36:07,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:36:07,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:36:07,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:36:07,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:36:07,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:36:07,308 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:02,367 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:02,369 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:02,379 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:02,379 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:02,427 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:02,429 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:52,989 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:52,989 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:53,009 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:53,009 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:53,050 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:53,056 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:53,859 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:53,859 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:53,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:53,879 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:41:53,891 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:41:53,891 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:42:05,039 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:42:05,039 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:42:05,059 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:42:05,059 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:42:05,079 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:42:05,079 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:06,174 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:06,174 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:06,219 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:06,225 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:06,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:06,253 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:07,023 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:07,025 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:07,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:07,041 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:44:07,057 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:44:07,059 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:04,420 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:04,429 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:04,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:04,466 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:04,489 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:04,493 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:05,729 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:05,729 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:05,743 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:05,743 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:45:05,759 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:45:05,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:32,433 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:32,433 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:32,461 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:32,463 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:32,489 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:32,491 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:33,416 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:33,416 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:33,433 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:33,433 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:46:33,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:46:33,451 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:07,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:07,244 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:07,262 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:07,267 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:07,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:07,284 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:08,029 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:08,035 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:08,049 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:08,051 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:47:08,071 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:47:08,071 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:48,719 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:48,719 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:48,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:48,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:48,799 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:48,799 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:49,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:49,589 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:49,610 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:49,610 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 07:58:49,619 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 07:58:49,619 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:32,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:32,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:32,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:32,299 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:32,316 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:32,319 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:33,259 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:33,264 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:33,274 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:33,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:33,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:33,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:52,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:52,749 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:52,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:52,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:52,819 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:52,819 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:54,291 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:54,291 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:54,309 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:54,309 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:02:54,321 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:02:54,321 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:37,249 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:37,249 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:37,289 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:37,289 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:37,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:37,317 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:39,264 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:39,264 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:39,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:39,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:12:39,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:12:39,294 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:23:57,559 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,696x358,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-03-08 08:24:32,185 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 794075288 Bytes (1073741824)
+2026-03-08 08:24:32,329 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:32,334 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:32,339 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:32,349 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:32,364 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:32,364 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:34,326 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 794613352 Bytes (1073741824)
+2026-03-08 08:24:34,454 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:34,454 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:34,469 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:34,469 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:34,485 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:34,485 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:39,059 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 802918816 Bytes (1073741824)
+2026-03-08 08:24:39,219 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:39,219 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:39,241 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:39,241 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:39,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:24:39,279 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_DEVICE
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USB_OTG_FS
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2026-03-08 08:24:39,494 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2026-03-08 08:24:39,499 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2026-03-08 08:24:39,499 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ETH
+2026-03-08 08:24:39,499 [INFO] CodeGenerator:639 - code generatio: config db path: C:\ST\STM32CubeIDE_1.5.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.1.0.202011121557\\db\
+2026-03-08 08:24:40,459 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp_save
+2026-03-08 08:24:40,589 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\license.tmp
+2026-03-08 08:24:40,644 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp_save
+2026-03-08 08:24:40,742 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\gpio.tmp
+2026-03-08 08:24:40,749 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2026-03-08 08:24:40,911 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp_save
+2026-03-08 08:24:40,999 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_vars.tmp
+2026-03-08 08:24:41,004 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp_save
+2026-03-08 08:24:41,209 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_inc.tmp
+2026-03-08 08:24:41,220 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp_save
+2026-03-08 08:24:41,340 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_HalInit.tmp
+2026-03-08 08:24:41,349 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp_save
+2026-03-08 08:24:41,510 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\usb_otg_fs_Msp.tmp
+2026-03-08 08:24:41,732 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 08:24:41,732 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 08:24:41,732 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2026-03-08 08:24:41,754 [INFO] Middleware:1252 - No code input for Bsp Dependency
+2026-03-08 08:24:41,799 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c_save
+2026-03-08 08:24:41,924 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.c
+2026-03-08 08:24:41,934 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h_save
+2026-03-08 08:24:42,029 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usb_device.h
+2026-03-08 08:24:42,044 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h_save
+2026-03-08 08:24:42,140 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.h
+2026-03-08 08:24:42,169 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c_save
+2026-03-08 08:24:42,341 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\Target\usbd_conf.c
+2026-03-08 08:24:42,354 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h_save
+2026-03-08 08:24:42,471 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.h
+2026-03-08 08:24:42,510 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c_save
+2026-03-08 08:24:42,674 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_desc.c
+2026-03-08 08:24:42,689 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h_save
+2026-03-08 08:24:42,784 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.h
+2026-03-08 08:24:42,815 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c_save
+2026-03-08 08:24:42,980 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\USB_DEVICE\App\usbd_cdc_if.c
+2026-03-08 08:24:43,029 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c_save
+2026-03-08 08:24:43,179 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_it.c
+2026-03-08 08:24:43,189 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h_save
+2026-03-08 08:24:43,289 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_it.h
+2026-03-08 08:24:43,334 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c_save
+2026-03-08 08:24:43,469 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\stm32f4xx_hal_msp.c
+2026-03-08 08:24:43,479 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp_save
+2026-03-08 08:24:43,575 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\MXTmpFiles\system.tmp
+2026-03-08 08:24:43,624 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-03-08 08:24:43,791 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\stm32f4xx_hal_conf.h
+2026-03-08 08:24:43,894 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h_save
+2026-03-08 08:24:44,004 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Inc\main.h
+2026-03-08 08:24:44,039 [INFO] CodeEngine:229 - oldGeneratedFile, C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c_save
+2026-03-08 08:24:44,364 [INFO] CodeEngine:247 - Generated code: C:\Users\jchau\Documents\uf_ce_undergrad\sasehacks\sasehack\hardware\usb_transmit\usb_transmit\Core\Src\main.c
+2026-03-08 08:24:45,513 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 349mS.
+2026-03-08 08:24:45,529 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.0-B13
+2026-03-08 08:24:46,109 [INFO] ConfigFileManager:1238 - The Die is : DIE419
+2026-03-08 08:24:51,379 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 5850mS.
+2026-03-08 08:24:51,379 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 08:24:51,389 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2026-03-08 08:25:35,764 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:35,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:25:35,781 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:35,781 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:25:35,812 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:35,812 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:25:37,925 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:37,929 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:25:37,944 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:37,944 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:25:37,964 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:25:37,964 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:27,713 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:27,713 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:27,739 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:27,739 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:27,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:27,773 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:29,974 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:29,974 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:29,993 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:29,993 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:26:30,009 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:26:30,009 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:13,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:13,754 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:13,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:13,769 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:13,819 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:13,821 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:15,144 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:15,144 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:15,169 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:15,169 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:28:15,184 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:28:15,184 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:24,210 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:24,210 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:24,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:24,229 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:24,252 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:24,252 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:26,943 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:26,944 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:26,962 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:26,963 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:45:26,980 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:45:26,981 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:50:47,903 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:50:47,905 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:50:47,920 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:50:47,922 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2026-03-08 08:50:47,933 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] [Fatal Error] :1:1: Premature end of file.
+2026-03-08 08:50:47,933 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
